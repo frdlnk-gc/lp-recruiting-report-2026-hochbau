@@ -1,0 +1,2226 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="robots" content="noindex">
+  <title>Recruiting-Report 2026 – Kostenlos f&uuml;r Hoch- &amp; Rohbau-Betriebe | GreenCareers</title>
+  <meta name="description" content="Der kostenlose Recruiting-Report 2026 f&uuml;r Hoch- und Rohbau-Betriebe: Vakanzkosten, Time-to-Fill, Gehaltsbenchmarks und Recruiting-Strategien f&uuml;r Polier, Bauleiter und Maurer.">
+  <link rel="icon" type="image/png" sizes="32x32" href="favicon-32.png">
+  <link rel="icon" type="image/png" sizes="64x64" href="favicon-64.png">
+  <link rel="apple-touch-icon" sizes="180x180" href="apple-touch-icon.png">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+
+  <!-- ============================================================
+       GC-GATE: IS_LIVE + Meta-Crawler-Guard + Clarity
+       ------------------------------------------------------------
+       IS_LIVE  : Tracking/Pixel/Webhook NUR auf *.green-careers.de.
+                  Auf Vercel-/GitHub-Preview-URLs passiert nichts —
+                  Test-Submits erzeugen keine echten Leads.
+       GUARD    : Meta klickt nach jeder neuen Ad die LP durch und
+                  betaetigt dabei alle Buttons (~15 s, Meta-IPs).
+                  Ohne Guard landen daraus leere Lead-Zeilen im Funnel.
+                  Regel: Send-Pfade nur an validierten State koppeln.
+                  gcRealUser() ist erst true nach einer echten,
+                  vertrauenswuerdigen Nutzer-Geste.
+       ============================================================ -->
+  <script>
+  var META_PIXEL_ID = '634469765867935';
+  var CLARITY_PROJECT_ID = ''; // Clarity-Projekt-ID eintragen -> Heatmaps/Recordings aktiv
+  var IS_LIVE = /(^|\.)green-careers\.de$/.test(location.hostname);
+
+  /* --- Meta-Crawler-Guard --------------------------------------- */
+  var GC_FIRST_PAINT = Date.now();
+  var GC_HAS_GESTURE = false;
+  var GC_MIN_DWELL_MS = 4000;   // Crawler ist nach ~15 s wieder weg, klickt aber sofort
+  ['pointerdown','touchstart','keydown','wheel'].forEach(function(ev){
+    window.addEventListener(ev, function(e){
+      if (e && e.isTrusted) GC_HAS_GESTURE = true;
+    }, { passive: true, capture: true });
+  });
+  // true = echter Mensch mit Geste UND plausibler Verweildauer
+  window.gcRealUser = function(){
+    return GC_HAS_GESTURE && (Date.now() - GC_FIRST_PAINT) >= GC_MIN_DWELL_MS;
+  };
+  window.gcGuardInfo = function(){
+    return { gesture: GC_HAS_GESTURE, dwell_ms: Date.now() - GC_FIRST_PAINT };
+  };
+
+  if (IS_LIVE) {
+    !function(f,b,e,v,n,t,s)
+    {if(f.fbq)return;n=f.fbq=function(){n.callMethod?
+    n.callMethod.apply(n,arguments):n.queue.push(arguments)};
+    if(!f._fbq)f._fbq=n;n.push=n;n.loaded=!0;n.version='2.0';
+    n.queue=[];t=b.createElement(e);t.async=!0;
+    t.src=v;s=b.getElementsByTagName(e)[0];
+    s.parentNode.insertBefore(t,s)}(window, document,'script',
+    'https://connect.facebook.net/en_US/fbevents.js');
+    fbq('init', META_PIXEL_ID);
+    fbq('track', 'PageView');
+    if (CLARITY_PROJECT_ID) {
+      (function(c,l,a,r,i,t,y){c[a]=c[a]||function(){(c[a].q=c[a].q||[]).push(arguments)};
+      t=l.createElement(r);t.async=1;t.src="https://www.clarity.ms/tag/"+i;
+      y=l.getElementsByTagName(r)[0];y.parentNode.insertBefore(t,y);
+      })(window, document, "clarity", "script", CLARITY_PROJECT_ID);
+    }
+  } else {
+    console.info('[GC Preview] Test-Modus: Pixel, Clarity, Tracking und Webhook sind deaktiviert (Hostname ist nicht green-careers.de).');
+  }
+  </script>
+  <noscript><img height="1" width="1" style="display:none"
+  src="https://www.facebook.com/tr?id=634469765867935&ev=PageView&noscript=1"/></noscript>
+  <!-- End Meta Pixel Code -->
+
+  <script>
+    var lpTurnstileToken = '';
+    function onLpTurnstileSuccess(token) { lpTurnstileToken = token; }
+  </script>
+  <script src="https://challenges.cloudflare.com/turnstile/v0/api.js" async defer></script>
+  <style>
+    :root {
+      /* === TIEFBAU FARBSYSTEM === */
+      /* "Moss"/"Green"-Variablen werden weiter genutzt, sind aber jetzt Anthrazit+Orange */
+      --moss: #2D3338;             /* Stahl-Anthrazit (war Forest Green) */
+      --moss-dark: #1A1D21;        /* Asphalt-Schwarz (war Moss-Dark) */
+      --moss-deep: #0E1012;        /* Tiefes Anthrazit (war Moss-Deep) */
+      --poison-green: #FF6B1A;     /* Baustellen-Orange (war Poison-Green) */
+      --poison-glow: #FF8533;      /* Helles Orange (war Poison-Glow) */
+      --lime-green: #E55A0A;       /* Dunkles Orange für Hover (war Lime-Green) */
+      --fern: #FFB07A;             /* Soft Orange (war Fern) */
+      --gradient-cta: linear-gradient(135deg, #FF6B1A 0%, #E55A0A 100%);
+      /* GreenCareers-Brand bleibt im Logo + DSGVO-Trust erhalten */
+      --gc-green: #00D261;
+      --earth: #4B4444;
+      --sand-ash: #1F1F1F;
+      --white: #FFFFFF;
+      --off-white: #F8F7F5;
+      --warm-gray: #F1EEE8;
+    }
+    *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+    html { scroll-behavior: smooth; }
+    body {
+      font-family: 'Poppins', 'Arial', sans-serif;
+      color: var(--earth);
+      background: var(--white);
+      overflow-x: hidden;
+      -webkit-font-smoothing: antialiased;
+      line-height: 1.5;
+    }
+    a { text-decoration: none; color: inherit; }
+    img { max-width: 100%; display: block; }
+    .container { width: 100%; max-width: 1180px; margin: 0 auto; padding: 0 20px; }
+
+    /* KEYFRAMES */
+    @keyframes fadeInUp { from { opacity: 0; transform: translateY(30px); } to { opacity: 1; transform: translateY(0); } }
+    @keyframes fadeInRight { from { opacity: 0; transform: translateX(30px); } to { opacity: 1; transform: translateX(0); } }
+    @keyframes scaleIn { from { opacity: 0; transform: scale(0.85); } to { opacity: 1; transform: scale(1); } }
+    @keyframes float { 0%, 100% { transform: translateY(0) rotateY(-6deg) rotateX(2deg); } 50% { transform: translateY(-10px) rotateY(-4deg) rotateX(1deg); } }
+    @keyframes pulse-green { 0%, 100% { box-shadow: 0 0 0 0 rgba(255,107,26, 0.5); } 50% { box-shadow: 0 0 0 14px rgba(255,107,26, 0); } }
+    @keyframes shimmer { 0% { left: -100%; } 100% { left: 100%; } }
+    @keyframes ripple { 0% { transform: scale(0.95); opacity: 1; } 100% { transform: scale(2.5); opacity: 0; } }
+    @keyframes scroll-left { 0% { transform: translateX(0); } 100% { transform: translateX(-50%); } }
+    @keyframes counter-glow { 0%, 100% { text-shadow: 0 0 30px rgba(255,107,26,0.4); } 50% { text-shadow: 0 0 60px rgba(255,107,26,0.7); } }
+    @keyframes badge-wiggle { 0%, 100% { transform: rotate(8deg) scale(1); } 50% { transform: rotate(8deg) scale(1.05); } }
+    @keyframes gradient-shift { 0%, 100% { background-position: 0% 50%; } 50% { background-position: 100% 50%; } }
+
+    .reveal { opacity: 0; transform: translateY(30px); transition: all 0.9s cubic-bezier(0.22, 1, 0.36, 1); }
+    .reveal.visible { opacity: 1; transform: translateY(0); }
+    .reveal-scale { opacity: 0; transform: scale(0.92); transition: all 0.9s cubic-bezier(0.22, 1, 0.36, 1); }
+    .reveal-scale.visible { opacity: 1; transform: scale(1); }
+    .stagger-1 { transition-delay: 0s; }
+    .stagger-2 { transition-delay: 0.08s; }
+    .stagger-3 { transition-delay: 0.16s; }
+    .stagger-4 { transition-delay: 0.24s; }
+
+    /* NAV */
+    nav {
+      position: fixed; top: 0; left: 0; right: 0; z-index: 1000;
+      padding: 12px 0; transition: all 0.4s ease;
+      background: linear-gradient(180deg, rgba(15,28,15,0.4) 0%, transparent 100%);
+    }
+    nav.scrolled {
+      background: rgba(15, 28, 15, 0.92);
+      backdrop-filter: blur(20px); -webkit-backdrop-filter: blur(20px);
+      padding: 8px 0;
+      box-shadow: 0 2px 30px rgba(0,0,0,0.3);
+    }
+    .nav-inner { display: flex; align-items: center; justify-content: space-between; }
+    .nav-logo img { height: 30px; width: auto; }
+    .nav-cta {
+      background: var(--gradient-cta); color: var(--sand-ash);
+      font-weight: 700; font-size: 0.74rem; padding: 8px 14px; border-radius: 50px;
+      font-family: 'Poppins', sans-serif;
+      transition: all 0.3s ease;
+      white-space: nowrap;
+    }
+    .nav-cta:hover { transform: translateY(-2px); box-shadow: 0 6px 24px rgba(255,107,26,0.4); }
+
+    /* HERO */
+    .hero {
+      position: relative;
+      background-color: var(--moss-dark);
+      overflow: hidden;
+    }
+    .hero-bg {
+      position: absolute; inset: 0;
+      background-image:
+        linear-gradient(135deg, rgba(15,28,15,0.84) 0%, rgba(26,44,26,0.74) 50%, rgba(20,38,20,0.9) 100%),
+        url('hero-images/hero-hochbau-web.jpg');
+      background-size: cover;
+      background-position: 70% 30%;
+      background-repeat: no-repeat;
+      z-index: 1;
+    }
+    .hero-vignette {
+      position: absolute; inset: 0; z-index: 2; pointer-events: none;
+      background:
+        radial-gradient(ellipse at 80% 20%, rgba(255,107,26,0.15) 0%, transparent 50%),
+        radial-gradient(ellipse at 20% 80%, rgba(255,107,26,0.08) 0%, transparent 50%);
+    }
+    .hero-content {
+      position: relative; z-index: 3;
+      display: flex; flex-direction: column;
+      padding: 80px 0 32px;
+      text-align: center; gap: 28px; align-items: center;
+      width: 100%;
+    }
+    .hero-text { order: 1; animation: fadeInUp 0.9s cubic-bezier(0.22, 1, 0.36, 1) 0.2s both; width: 100%; }
+    .hero-badge {
+      display: inline-flex; align-items: center; gap: 8px;
+      background: rgba(255,107,26,0.14); border: 1px solid rgba(255,107,26,0.35);
+      border-radius: 50px; padding: 6px 14px; font-size: 0.7rem; font-weight: 600;
+      color: var(--poison-green); margin-bottom: 14px;
+      backdrop-filter: blur(10px); -webkit-backdrop-filter: blur(10px);
+    }
+    .hero-badge-dot {
+      width: 7px; height: 7px; background: var(--poison-green);
+      border-radius: 50%; position: relative; flex-shrink: 0;
+    }
+    .hero-badge-dot::after {
+      content: ''; position: absolute; inset: -3px; border-radius: 50%;
+      border: 2px solid rgba(255,107,26,0.5);
+      animation: ripple 2s ease-out infinite;
+    }
+    .hero h1 {
+      font-size: 1.75rem; font-weight: 800; color: var(--white);
+      line-height: 1.15; margin-bottom: 12px; letter-spacing: -0.02em;
+      text-shadow: 0 2px 20px rgba(0,0,0,0.5);
+    }
+    .hero h1 .highlight {
+      background: linear-gradient(135deg, var(--poison-green), var(--poison-glow), var(--fern));
+      background-size: 200% 200%;
+      -webkit-background-clip: text; -webkit-text-fill-color: transparent;
+      background-clip: text;
+      animation: gradient-shift 4s ease infinite;
+    }
+    .hero-sub {
+      font-size: 0.9rem; color: rgba(255,255,255,0.85); line-height: 1.55;
+      max-width: 460px; margin: 0 auto 18px; font-weight: 400;
+      text-shadow: 0 1px 10px rgba(0,0,0,0.4);
+    }
+    .btn-primary {
+      background: var(--gradient-cta); color: var(--sand-ash);
+      font-weight: 700; font-size: 0.95rem; padding: 14px 28px; border-radius: 50px;
+      border: none; cursor: pointer; transition: all 0.35s cubic-bezier(0.22, 1, 0.36, 1);
+      animation: pulse-green 2.5s infinite;
+      box-shadow: 0 4px 24px rgba(255,107,26, 0.35);
+      display: inline-flex; align-items: center; gap: 8px; min-height: 50px;
+      font-family: 'Poppins', sans-serif; position: relative; overflow: hidden;
+    }
+    .btn-primary::after {
+      content: ''; position: absolute; top: 0; left: -100%; width: 100%; height: 100%;
+      background: linear-gradient(90deg, transparent, rgba(255,255,255,0.3), transparent);
+      transition: left 0.6s ease;
+    }
+    .btn-primary:hover::after { left: 100%; }
+    .btn-primary:hover {
+      transform: translateY(-3px) scale(1.02);
+      box-shadow: 0 12px 40px rgba(255,107,26, 0.55);
+      animation: none;
+    }
+    .hero-trust-chips {
+      display: flex; flex-wrap: wrap; justify-content: center;
+      gap: 8px; margin-top: 18px;
+    }
+    .hero-trust-chip {
+      display: inline-flex; align-items: center; gap: 5px;
+      background: rgba(255,255,255,0.08);
+      border: 1px solid rgba(255,255,255,0.14);
+      backdrop-filter: blur(10px); -webkit-backdrop-filter: blur(10px);
+      border-radius: 50px; padding: 6px 11px;
+      font-size: 0.68rem; font-weight: 500;
+      color: rgba(255,255,255,0.92);
+    }
+    .hero-trust-chip strong { color: var(--white); font-weight: 700; }
+    .g-mini {
+      display: inline-flex;
+      font-size: 0.68rem; font-weight: 700; font-family: 'Poppins', sans-serif;
+    }
+    .g-mini span:nth-child(1) { color: #4285F4; }
+    .g-mini span:nth-child(2) { color: #EA4335; }
+    .g-mini span:nth-child(3) { color: #FBBC04; }
+    .g-mini span:nth-child(4) { color: #4285F4; }
+    .g-mini span:nth-child(5) { color: #34A853; }
+    .g-mini span:nth-child(6) { color: #EA4335; }
+    .stars-mini { color: #FBBC04; font-size: 0.66rem; letter-spacing: 0.5px; }
+
+    /* BOOK MOCKUP – fixed Gratis badge */
+    .hero-mockup { order: 2; animation: fadeInRight 1s cubic-bezier(0.22, 1, 0.36, 1) 0.4s both; }
+    .book-container {
+      position: relative;
+      width: 200px; height: 270px;
+      margin: 0 auto;
+      perspective: 1200px;
+      padding-top: 18px; /* space for badge */
+    }
+    .book {
+      position: relative;
+      width: 100%; height: 100%;
+      transform-style: preserve-3d;
+      animation: float 5s ease-in-out infinite;
+      transform: rotateY(-6deg) rotateX(2deg);
+    }
+    .book::after {
+      content: '';
+      position: absolute;
+      left: 8%; right: 8%; bottom: -22px;
+      height: 30px;
+      background: radial-gradient(ellipse at center, rgba(0,0,0,0.5) 0%, transparent 70%);
+      filter: blur(10px);
+      z-index: -1;
+    }
+    .book-glow {
+      position: absolute; width: 140%; height: 140%; top: -20%; left: -20%;
+      background: radial-gradient(circle, rgba(255,107,26,0.22) 0%, transparent 60%);
+      border-radius: 50%; pointer-events: none; z-index: -2;
+      filter: blur(30px);
+    }
+    .book-spine-edge {
+      position: absolute;
+      left: 0; top: 0; bottom: 0;
+      width: 14px;
+      background:
+        linear-gradient(90deg,
+          rgba(0,0,0,0.6) 0%,
+          rgba(0,0,0,0.3) 40%,
+          rgba(0,0,0,0.1) 70%,
+          transparent 100%);
+      pointer-events: none;
+      z-index: 3;
+    }
+    .book-pages-edge {
+      position: absolute;
+      right: -3px; top: 4px; bottom: 4px;
+      width: 4px;
+      background:
+        linear-gradient(90deg, rgba(0,0,0,0.3), transparent 30%),
+        repeating-linear-gradient(180deg,
+          #ebe7dc 0px, #ebe7dc 0.5px,
+          #c9c3b5 0.5px, #c9c3b5 1px
+        );
+      border-radius: 0 2px 2px 0;
+      transform: rotateY(-8deg);
+      transform-origin: left center;
+      box-shadow: 1px 0 5px rgba(0,0,0,0.2);
+    }
+    .book-cover {
+      position: relative;
+      width: 100%; height: 100%;
+      background:
+        linear-gradient(160deg,
+          #1A1D21 0%,
+          #243C24 30%,
+          #2D3338 65%,
+          #1A1D21 100%);
+      border-radius: 2px 6px 6px 2px;
+      box-shadow:
+        0 25px 50px rgba(0,0,0,0.5),
+        0 12px 25px rgba(0,0,0,0.3),
+        inset 0 0 90px rgba(0,0,0,0.25),
+        inset 8px 0 14px rgba(0,0,0,0.5),
+        inset -2px 0 4px rgba(255,107,26,0.1);
+      padding: 24px 22px 20px;
+      display: flex; flex-direction: column; justify-content: space-between;
+      overflow: hidden;
+    }
+    .book-cover::before {
+      content: '';
+      position: absolute; inset: 0;
+      background: linear-gradient(125deg, transparent 42%, rgba(255,255,255,0.06) 50%, transparent 58%);
+      pointer-events: none;
+    }
+    .book-cover::after {
+      content: '';
+      position: absolute;
+      top: 11px; left: 18px; right: 11px; bottom: 11px;
+      border: 1px solid rgba(255,107,26,0.18);
+      border-radius: 2px;
+      pointer-events: none;
+    }
+    .book-top {
+      display: flex; align-items: center;
+      position: relative; z-index: 2;
+    }
+    .book-logo-img { height: 18px; width: auto; opacity: 0.95; }
+    .book-title-block { position: relative; z-index: 2; }
+    .book-eyebrow {
+      font-size: 0.54rem; font-weight: 600;
+      color: var(--poison-green);
+      letter-spacing: 0.2em;
+      text-transform: uppercase;
+      margin-bottom: 8px;
+    }
+    .book-title {
+      font-size: 1.15rem; font-weight: 800;
+      color: var(--white);
+      line-height: 1.1; letter-spacing: -0.01em;
+    }
+    .book-year {
+      font-size: 2.7rem; font-weight: 800;
+      background: linear-gradient(135deg, var(--poison-green), var(--poison-glow));
+      -webkit-background-clip: text; -webkit-text-fill-color: transparent;
+      background-clip: text;
+      line-height: 1;
+      letter-spacing: -0.03em;
+      margin-top: 2px;
+    }
+    .book-divider {
+      width: 32px; height: 2px;
+      background: var(--poison-green);
+      margin: 10px 0 0;
+      border-radius: 2px;
+    }
+    .book-bottom {
+      position: relative; z-index: 2;
+      display: flex; justify-content: space-between; align-items: flex-end;
+    }
+    .book-branch {
+      font-size: 0.5rem; font-weight: 500;
+      color: rgba(255,255,255,0.5);
+      letter-spacing: 0.14em;
+      text-transform: uppercase;
+      max-width: 100px;
+      line-height: 1.4;
+    }
+    .book-pages-count {
+      font-size: 0.46rem; font-weight: 400;
+      color: rgba(255,210,97,0.35);
+      letter-spacing: 0.08em;
+    }
+    /* Gratis badge – properly positioned ABOVE book, no overlap */
+    .book-badge {
+      position: absolute;
+      top: 0; right: 8px;
+      background: var(--poison-green); color: var(--sand-ash);
+      font-size: 0.62rem; font-weight: 800; padding: 6px 14px;
+      border-radius: 6px;
+      text-transform: uppercase; letter-spacing: 0.12em;
+      box-shadow: 0 6px 16px rgba(255,107,26,0.45), 0 2px 4px rgba(0,0,0,0.2);
+      transform: rotate(8deg);
+      animation: badge-wiggle 2.5s ease-in-out infinite;
+      z-index: 10;
+    }
+
+    /* CUSTOMER LOGOS – real images */
+    .proof-bar {
+      background: var(--white);
+      padding: 24px 0 20px;
+      overflow: hidden;
+      border-top: 1px solid rgba(45,51,56,0.06);
+      border-bottom: 1px solid rgba(45,51,56,0.06);
+    }
+    .proof-bar-label {
+      text-align: center; font-size: 0.7rem; font-weight: 700;
+      color: var(--moss); text-transform: uppercase;
+      letter-spacing: 0.14em; margin-bottom: 18px;
+    }
+    .proof-bar-track {
+      display: flex; gap: 36px; align-items: center; white-space: nowrap;
+      animation: scroll-left 50s linear infinite;
+    }
+    .proof-bar-track img {
+      flex-shrink: 0;
+      height: 44px; width: auto;
+      opacity: 0.75;
+      filter: grayscale(40%);
+      transition: all 0.3s ease;
+    }
+    .proof-bar-track img:hover { opacity: 1; filter: grayscale(0); }
+
+    /* SECTION GENERAL */
+    .section-label {
+      display: inline-flex; align-items: center; gap: 10px;
+      font-size: 0.68rem; font-weight: 700; color: var(--lime-green);
+      text-transform: uppercase; letter-spacing: 0.14em; margin-bottom: 12px;
+    }
+    .section-label-line { width: 24px; height: 2px; background: var(--gradient-cta); border-radius: 2px; }
+    .section-title { font-size: 1.55rem; font-weight: 800; color: var(--sand-ash); line-height: 1.2; margin-bottom: 14px; letter-spacing: -0.02em; }
+    .section-sub { font-size: 0.92rem; color: var(--earth); line-height: 1.65; margin-bottom: 36px; max-width: 620px; }
+
+    /* PROBLEM */
+    .section-problem { padding: 70px 0; background: var(--white); }
+    .problem-grid { display: grid; grid-template-columns: 1fr; gap: 14px; }
+    .problem-card {
+      background: var(--white); border-radius: 18px; padding: 24px 22px;
+      box-shadow: 0 2px 20px rgba(45,51,56,0.06);
+      border: 1px solid rgba(45,51,56,0.05);
+      transition: all 0.5s cubic-bezier(0.22, 1, 0.36, 1);
+      position: relative; overflow: hidden;
+    }
+    .problem-card::before {
+      content: ''; position: absolute; left: 0; top: 0; bottom: 0; width: 4px;
+      background: transparent; transition: background 0.4s ease;
+    }
+    .problem-card:hover { transform: translateY(-5px); box-shadow: 0 14px 40px rgba(45,51,56,0.14); }
+    .problem-card:hover::before { background: var(--poison-green); }
+    .problem-icon {
+      width: 40px; height: 40px; border-radius: 10px;
+      background: rgba(255,107,26,0.08);
+      display: flex; align-items: center; justify-content: center;
+      font-size: 1.3rem; margin-bottom: 12px;
+    }
+    .problem-card h3 { font-size: 1rem; font-weight: 700; color: var(--sand-ash); margin-bottom: 6px; }
+    .problem-card p { font-size: 0.86rem; color: var(--earth); line-height: 1.65; }
+    .problem-closer {
+      margin-top: 32px; padding: 20px 22px;
+      background: linear-gradient(135deg, rgba(255,107,26,0.06) 0%, rgba(255,107,26,0.02) 100%);
+      border-radius: 14px; border-left: 4px solid var(--poison-green);
+      font-size: 0.9rem; color: var(--moss); font-weight: 500; line-height: 1.6;
+    }
+
+    /* CONSEQUENCE */
+    .section-consequence {
+      padding: 70px 0;
+      background: linear-gradient(135deg, #0F1C0F 0%, #1A2C1A 50%, #243C24 100%);
+      position: relative; overflow: hidden; text-align: center;
+    }
+    .consequence-bg-dots {
+      position: absolute; inset: 0; opacity: 0.04; pointer-events: none;
+      background-image: radial-gradient(circle, #00D261 1px, transparent 1px);
+      background-size: 32px 32px;
+    }
+    .consequence-bg-glow {
+      position: absolute; top: 50%; left: 50%;
+      transform: translate(-50%, -50%);
+      width: 500px; height: 500px;
+      background: radial-gradient(circle, rgba(255,107,26,0.12) 0%, transparent 70%);
+      border-radius: 50%; pointer-events: none;
+    }
+    .consequence-label {
+      font-size: 0.68rem; font-weight: 700; color: rgba(255,255,255,0.5);
+      text-transform: uppercase; letter-spacing: 0.18em; margin-bottom: 18px;
+      position: relative; z-index: 1;
+    }
+    .consequence-number {
+      font-size: 3rem; font-weight: 800; color: var(--poison-green);
+      line-height: 1; margin-bottom: 14px;
+      animation: counter-glow 3s ease-in-out infinite;
+      position: relative; z-index: 1;
+      letter-spacing: -0.03em;
+    }
+    .consequence-text {
+      font-size: 0.92rem; color: rgba(255,255,255,0.72); max-width: 440px;
+      margin: 0 auto 10px; line-height: 1.6;
+      position: relative; z-index: 1;
+    }
+    .consequence-source {
+      font-size: 0.66rem; color: rgba(255,255,255,0.35);
+      margin-bottom: 36px;
+      position: relative; z-index: 1;
+    }
+    .consequence-divider { width: 60px; height: 2px; background: linear-gradient(90deg, transparent, var(--poison-green), transparent); margin: 0 auto 36px; position: relative; z-index: 1; }
+    .consequence-stats {
+      display: grid; grid-template-columns: repeat(3, 1fr); gap: 14px;
+      max-width: 500px; margin: 0 auto;
+      position: relative; z-index: 1;
+    }
+    .consequence-stat-number { font-size: 1.3rem; font-weight: 800; color: var(--white); margin-bottom: 4px; letter-spacing: -0.02em; }
+    .consequence-stat-label { font-size: 0.64rem; color: rgba(255,255,255,0.5); line-height: 1.4; }
+
+    /* SOLUTION */
+    .section-solution { padding: 70px 0; background: var(--off-white); }
+    .solution-content { display: flex; flex-direction: column; gap: 40px; align-items: center; }
+    .solution-text { order: 1; width: 100%; }
+    .solution-mockup { order: 2; }
+    .solution-overtitle { font-size: 0.68rem; font-weight: 700; color: var(--lime-green); text-transform: uppercase; letter-spacing: 0.14em; margin-bottom: 12px; }
+    .solution-title { font-size: 1.55rem; font-weight: 800; color: var(--sand-ash); margin-bottom: 20px; line-height: 1.25; letter-spacing: -0.02em; }
+    .solution-list { list-style: none; padding: 0; margin-bottom: 24px; }
+    .solution-list li {
+      display: flex; align-items: flex-start; gap: 12px; margin-bottom: 14px;
+      font-size: 0.88rem; color: var(--earth); line-height: 1.55;
+    }
+    .solution-check {
+      flex-shrink: 0; width: 20px; height: 20px; border-radius: 50%;
+      background: rgba(255,107,26,0.12); color: var(--poison-green);
+      display: flex; align-items: center; justify-content: center;
+      font-size: 0.8rem; font-weight: 700; margin-top: 2px;
+    }
+    .solution-value {
+      font-size: 0.8rem; color: var(--lime-green);
+      font-weight: 500; font-style: italic;
+      margin: 18px 0 22px;
+    }
+    .solution-mockup-wrapper { display: flex; justify-content: center; }
+
+    /* REVIEWS – with carousel */
+    .section-reviews { padding: 70px 0; background: var(--white); }
+    .reviews-header-center { text-align: center; margin-bottom: 14px; }
+    .google-badge {
+      display: inline-flex; align-items: center; gap: 10px;
+      background: var(--off-white);
+      padding: 10px 18px; border-radius: 50px;
+      margin-bottom: 28px;
+      border: 1px solid rgba(45,51,56,0.08);
+    }
+    .g-logo {
+      display: inline-flex;
+      font-size: 1rem; font-weight: 700; font-family: 'Poppins', sans-serif;
+      letter-spacing: -0.02em;
+    }
+    .g-logo span:nth-child(1) { color: #4285F4; }
+    .g-logo span:nth-child(2) { color: #EA4335; }
+    .g-logo span:nth-child(3) { color: #FBBC04; }
+    .g-logo span:nth-child(4) { color: #4285F4; }
+    .g-logo span:nth-child(5) { color: #34A853; }
+    .g-logo span:nth-child(6) { color: #EA4335; }
+    .rating-num { font-size: 0.95rem; font-weight: 800; color: var(--sand-ash); }
+    .rating-stars { color: #FBBC04; font-size: 0.9rem; letter-spacing: 1px; }
+
+    .reviews-stats-bar {
+      display: flex; flex-direction: column; gap: 18px;
+      background: var(--moss); border-radius: 20px;
+      padding: 28px 22px; margin-bottom: 36px;
+      box-shadow: 0 10px 40px rgba(45,51,56,0.15);
+    }
+    .rs-item { text-align: center; }
+    .rs-num { display: block; font-size: 1.7rem; font-weight: 800; color: var(--poison-green); letter-spacing: -0.02em; }
+    .rs-label { display: block; font-size: 0.72rem; color: rgba(255,255,255,0.6); font-weight: 400; margin-top: 2px; }
+    .rs-divider { width: 40px; height: 1px; background: rgba(255,255,255,0.12); margin: 0 auto; }
+
+    /* CAROUSEL */
+    .reviews-carousel-wrap {
+      position: relative;
+      max-width: 920px;
+      margin: 0 auto;
+    }
+    .reviews-viewport {
+      overflow: hidden;
+      padding: 8px 0;
+    }
+    .reviews-track {
+      display: flex;
+      gap: 16px;
+      transition: transform 0.5s cubic-bezier(0.22, 1, 0.36, 1);
+      will-change: transform;
+    }
+    .review-card {
+      background: var(--white); border-radius: 18px; padding: 22px;
+      box-shadow: 0 4px 24px rgba(0,0,0,0.06);
+      border: 1px solid rgba(0,0,0,0.04);
+      flex-shrink: 0;
+      width: 100%;
+      display: flex; flex-direction: column;
+    }
+    .review-header {
+      display: flex; align-items: center; gap: 12px; margin-bottom: 12px;
+    }
+    .review-avatar {
+      width: 42px; height: 42px; border-radius: 50%;
+      color: white; font-size: 0.78rem; font-weight: 700;
+      display: flex; align-items: center; justify-content: center; flex-shrink: 0;
+    }
+    .avatar-1 { background: linear-gradient(135deg, #4285F4 0%, #34A853 100%); }
+    .avatar-2 { background: linear-gradient(135deg, #EA4335 0%, #FBBC04 100%); }
+    .avatar-3 { background: linear-gradient(135deg, #34A853 0%, #4285F4 100%); }
+    .avatar-4 { background: linear-gradient(135deg, #FBBC04 0%, #EA4335 100%); }
+    .avatar-5 { background: linear-gradient(135deg, #4285F4 0%, #EA4335 100%); }
+    .review-meta { flex: 1; }
+    .review-name { font-size: 0.88rem; font-weight: 700; color: var(--sand-ash); margin: 0; }
+    .review-date { font-size: 0.7rem; color: var(--earth); margin-top: 1px; }
+    .review-stars { color: #FBBC04; font-size: 0.9rem; letter-spacing: 1.5px; margin-bottom: 10px; }
+    .review-text { font-size: 0.86rem; line-height: 1.6; color: var(--earth); flex: 1; }
+    .review-verified {
+      display: inline-flex; align-items: center; gap: 6px;
+      font-size: 0.68rem; color: var(--lime-green); font-weight: 600;
+      margin-top: 12px;
+    }
+    .carousel-controls {
+      display: flex; justify-content: center; align-items: center;
+      gap: 16px; margin-top: 24px;
+    }
+    .carousel-btn {
+      width: 42px; height: 42px; border-radius: 50%;
+      border: 2px solid rgba(45,51,56,0.12);
+      background: var(--white); color: var(--moss);
+      cursor: pointer; transition: all 0.3s ease;
+      display: flex; align-items: center; justify-content: center;
+      font-size: 1.1rem; font-weight: 700;
+      font-family: 'Poppins', sans-serif;
+    }
+    .carousel-btn:hover {
+      background: var(--poison-green); color: var(--sand-ash); border-color: var(--poison-green);
+      transform: scale(1.05);
+    }
+    .carousel-btn:disabled {
+      opacity: 0.3; cursor: not-allowed; transform: none;
+    }
+    .carousel-dots {
+      display: flex; gap: 6px;
+    }
+    .carousel-dot {
+      width: 8px; height: 8px; border-radius: 50%;
+      background: rgba(45,51,56,0.15);
+      border: none; padding: 0;
+      cursor: pointer; transition: all 0.3s ease;
+    }
+    .carousel-dot.active {
+      background: var(--poison-green); width: 24px; border-radius: 4px;
+    }
+
+    /* FORM */
+    .section-form {
+      padding: 70px 0;
+      background: linear-gradient(180deg, var(--off-white) 0%, #e8e3d8 100%);
+      position: relative;
+    }
+    /* === QUIZ-FUNNEL CSS === */
+    .quiz-progress {
+      display: flex; flex-direction: column; align-items: center; gap: 8px;
+      margin-bottom: 22px;
+    }
+    .quiz-progress-label {
+      font-size: 0.78rem; font-weight: 600; color: var(--earth);
+      letter-spacing: 0.02em;
+    }
+    .quiz-progress-bar {
+      width: 100%; max-width: 320px; height: 8px;
+      background: var(--warm-gray); border-radius: 50px; overflow: hidden;
+      position: relative;
+    }
+    .quiz-progress-fill {
+      position: absolute; top: 0; left: 0; bottom: 0;
+      background: var(--gradient-cta);
+      border-radius: 50px;
+      transition: width 0.5s cubic-bezier(0.22, 1, 0.36, 1);
+      box-shadow: 0 0 12px rgba(0, 210, 97, 0.45);
+    }
+
+    .quiz-slide { display: none; animation: quizFadeIn 0.45s cubic-bezier(0.22, 1, 0.36, 1); }
+    .quiz-slide.is-active { display: block; }
+    @keyframes quizFadeIn {
+      from { opacity: 0; transform: translateY(14px); }
+      to   { opacity: 1; transform: translateY(0); }
+    }
+
+    .quiz-question {
+      font-size: 1.18rem; font-weight: 700; color: var(--moss-dark);
+      text-align: center; line-height: 1.35; margin-bottom: 6px;
+      letter-spacing: -0.01em;
+    }
+    @media (min-width: 720px) { .quiz-question { font-size: 1.32rem; } }
+    .quiz-subtext {
+      font-size: 0.86rem; color: var(--earth); text-align: center;
+      line-height: 1.55; margin-bottom: 22px;
+      max-width: 440px; margin-left: auto; margin-right: auto;
+    }
+    .quiz-subtext strong { color: var(--moss-dark); }
+    .quiz-perso { color: var(--lime-green); font-weight: 700; }
+
+    .quiz-options { display: flex; flex-direction: column; gap: 10px; max-width: 480px; margin: 0 auto; }
+    .quiz-option {
+      display: flex; align-items: center; justify-content: space-between;
+      gap: 12px;
+      width: 100%;
+      background: var(--white);
+      border: 2px solid #E4E2DC;
+      color: var(--moss-dark);
+      font-family: 'Poppins', sans-serif;
+      font-weight: 600; font-size: 0.94rem;
+      padding: 14px 18px;
+      border-radius: 14px;
+      cursor: pointer;
+      transition: all 0.2s ease;
+      text-align: left;
+      line-height: 1.35;
+      min-height: 54px;
+    }
+    .quiz-option-meta {
+      font-size: 0.74rem; font-weight: 500; color: var(--earth);
+      opacity: 0.85;
+    }
+    .quiz-option:hover {
+      border-color: var(--poison-green);
+      background: rgba(0, 210, 97, 0.06);
+      transform: translateY(-1px);
+      box-shadow: 0 6px 20px rgba(0, 210, 97, 0.12);
+    }
+    .quiz-option:active { transform: translateY(0); }
+    .quiz-option.is-selected {
+      border-color: var(--poison-green);
+      background: var(--gradient-cta);
+      color: var(--sand-ash);
+    }
+    .quiz-option.is-selected .quiz-option-meta { color: rgba(31,31,31,0.8); }
+
+    .quiz-input-group {
+      max-width: 460px; margin: 0 auto 14px;
+      display: flex; flex-direction: column; gap: 10px;
+      animation: quizFadeIn 0.45s cubic-bezier(0.22, 1, 0.36, 1);
+    }
+    .quiz-input-row { display: flex; gap: 10px; }
+    .quiz-input-row .quiz-input-wrap { flex: 1; }
+    .quiz-input-wrap { position: relative; }
+    .quiz-input-icon {
+      position: absolute; top: 50%; left: 14px; transform: translateY(-50%);
+      width: 18px; height: 18px;
+      color: var(--lime-green); opacity: 0.85;
+    }
+    .quiz-input {
+      width: 100%; padding: 14px 16px 14px 42px;
+      border: 2px solid #E4E2DC; border-radius: 12px;
+      font-family: 'Poppins', sans-serif; font-size: 0.95rem;
+      color: var(--moss-dark);
+      background: var(--white);
+      transition: all 0.2s ease;
+      min-height: 52px;
+    }
+    .quiz-input:focus {
+      outline: none;
+      border-color: var(--poison-green);
+      box-shadow: 0 0 0 4px rgba(0, 210, 97, 0.12);
+    }
+    .quiz-input.is-error {
+      border-color: #e53e3e;
+      box-shadow: 0 0 0 4px rgba(229, 62, 62, 0.10);
+    }
+    .quiz-input::placeholder { color: #9A9690; }
+
+    .quiz-cta {
+      display: flex; align-items: center; justify-content: center; gap: 8px;
+      width: 100%; max-width: 460px; margin: 14px auto 0;
+      background: var(--gradient-cta); color: var(--sand-ash);
+      font-family: 'Poppins', sans-serif; font-weight: 700;
+      font-size: 0.98rem; padding: 16px 22px;
+      border: none; border-radius: 50px;
+      cursor: pointer; transition: all 0.3s cubic-bezier(0.22, 1, 0.36, 1);
+      box-shadow: 0 6px 22px rgba(0, 210, 97, 0.32);
+      min-height: 54px;
+    }
+    .quiz-cta:hover { transform: translateY(-2px); box-shadow: 0 12px 32px rgba(0, 210, 97, 0.45); }
+    .quiz-cta:disabled { opacity: 0.65; cursor: not-allowed; transform: none; box-shadow: none; }
+
+    .quiz-back {
+      display: inline-flex; align-items: center; gap: 4px;
+      background: none; border: none; cursor: pointer;
+      color: var(--earth); font-family: 'Poppins', sans-serif;
+      font-size: 0.78rem; font-weight: 500;
+      padding: 6px 8px; margin: 14px auto 0;
+      transition: color 0.2s ease;
+    }
+    .quiz-back:hover { color: var(--moss-dark); }
+
+    .quiz-privacy {
+      display: flex; gap: 10px; align-items: flex-start;
+      max-width: 460px; margin: 14px auto 0;
+      font-size: 0.72rem; color: var(--earth); line-height: 1.5;
+    }
+    .quiz-privacy input[type="checkbox"] {
+      width: 17px; height: 17px; flex-shrink: 0;
+      margin-top: 2px;
+      accent-color: var(--poison-green);
+    }
+    .quiz-privacy a { color: var(--lime-green); text-decoration: underline; }
+
+    .quiz-trust-row {
+      display: flex; flex-wrap: wrap; justify-content: center; gap: 14px;
+      margin-top: 18px;
+      font-size: 0.72rem; color: var(--earth);
+    }
+    .quiz-trust-row span { display: inline-flex; align-items: center; gap: 5px; }
+    .quiz-trust-row .quiz-trust-dot {
+      width: 6px; height: 6px; border-radius: 50%;
+      background: var(--poison-green);
+      box-shadow: 0 0 6px rgba(0, 210, 97, 0.55);
+    }
+
+    .quiz-error-msg {
+      display: none; max-width: 460px; margin: 12px auto 0;
+      padding: 10px 14px; border-radius: 10px;
+      background: rgba(229, 62, 62, 0.08); color: #b62828;
+      font-size: 0.82rem; text-align: center;
+      border: 1px solid rgba(229, 62, 62, 0.2);
+    }
+    .quiz-error-msg.active { display: block; }
+
+    .quiz-phone-wrap { display: flex; align-items: center; gap: 0; }
+    .quiz-phone-flag {
+      display: inline-flex; align-items: center; gap: 6px;
+      background: var(--white); border: 2px solid #E4E2DC; border-right: none;
+      padding: 14px 12px; border-radius: 12px 0 0 12px;
+      font-size: 0.88rem; font-weight: 600; color: var(--moss-dark);
+      min-height: 52px;
+    }
+    .quiz-phone-wrap .quiz-input {
+      border-radius: 0 12px 12px 0;
+      padding-left: 14px;
+    }
+
+    /* =====================================================
+       STICKY MOBILE-CTA (Recovery für User die am Quiz vorbeiscrollten)
+       ===================================================== */
+
+    .form-wrapper {
+      background: var(--white); border-radius: 22px; padding: 30px 22px;
+      box-shadow: 0 16px 70px rgba(45,51,56,0.12);
+      border: 1px solid rgba(45,51,56,0.06);
+      max-width: 520px; margin: 0 auto;
+      position: relative; overflow: hidden;
+    }
+    .form-wrapper::before {
+      content: ''; position: absolute; top: 0; left: 0; right: 0; height: 4px;
+      background: var(--gradient-cta);
+    }
+    .form-header { text-align: center; margin-bottom: 24px; }
+    .form-header h2 {
+      font-size: 1.3rem; font-weight: 800; color: var(--sand-ash);
+      margin-bottom: 8px; letter-spacing: -0.01em;
+    }
+    .form-header p { font-size: 0.82rem; color: var(--earth); line-height: 1.55; }
+    .form-group { margin-bottom: 14px; }
+    .form-row { display: grid; grid-template-columns: 1fr; gap: 14px; }
+    .form-group label {
+      display: block; font-size: 0.78rem; font-weight: 600;
+      color: var(--sand-ash); margin-bottom: 6px;
+    }
+    .form-group input, .form-group select {
+      width: 100%; padding: 13px 15px; font-size: 16px;
+      font-family: 'Poppins', sans-serif;
+      border: 2px solid rgba(45,51,56,0.1); border-radius: 12px;
+      background: var(--white); color: var(--sand-ash);
+      transition: all 0.3s ease; outline: none;
+    }
+    .form-group input:focus, .form-group select:focus {
+      border-color: var(--poison-green);
+      box-shadow: 0 0 0 4px rgba(255,107,26,0.12);
+    }
+    .form-hint-box {
+      background: rgba(255,107,26,0.06);
+      border: 1px solid rgba(255,107,26,0.2);
+      border-radius: 12px;
+      padding: 11px 13px;
+      margin-top: 8px;
+      display: flex; align-items: flex-start; gap: 10px;
+    }
+    .form-hint-icon { font-size: 1.15rem; flex-shrink: 0; line-height: 1; }
+    .form-hint-text {
+      font-size: 0.72rem; color: var(--moss); font-weight: 500; line-height: 1.5;
+    }
+    .form-hint-text strong { color: var(--lime-green); font-weight: 700; }
+    .form-checkbox {
+      display: flex; align-items: flex-start; gap: 10px; margin-top: 18px;
+    }
+    .form-checkbox input[type="checkbox"] {
+      width: 18px; height: 18px; margin-top: 2px;
+      accent-color: var(--poison-green); flex-shrink: 0;
+    }
+    .form-checkbox label { font-size: 0.72rem; color: var(--earth); line-height: 1.5; }
+    .form-checkbox a { color: var(--lime-green); text-decoration: underline; }
+    .btn-submit {
+      width: 100%; padding: 16px; min-height: 56px;
+      background: var(--gradient-cta); color: var(--sand-ash);
+      font-weight: 700; font-size: 0.98rem; border-radius: 14px;
+      border: none; cursor: pointer;
+      font-family: 'Poppins', sans-serif;
+      transition: all 0.35s cubic-bezier(0.22, 1, 0.36, 1);
+      animation: pulse-green 2.5s infinite;
+      box-shadow: 0 6px 26px rgba(255,107,26,0.3);
+      margin-top: 22px; position: relative; overflow: hidden;
+    }
+    .btn-submit::after {
+      content: ''; position: absolute; top: 0; left: -100%;
+      width: 80%; height: 100%;
+      background: linear-gradient(90deg, transparent, rgba(255,255,255,0.25), transparent);
+      animation: shimmer 3.5s ease-in-out infinite;
+    }
+    .btn-submit:hover {
+      transform: translateY(-3px);
+      box-shadow: 0 12px 45px rgba(255,107,26,0.5);
+      animation: none;
+    }
+    .btn-submit:disabled { opacity: 0.7; cursor: not-allowed; }
+    .form-error-msg {
+      display: none;
+      background: #fee;
+      border: 1px solid #f88;
+      color: #c33;
+      padding: 12px 14px;
+      border-radius: 10px;
+      font-size: 0.8rem;
+      margin-top: 14px;
+    }
+    .form-error-msg.active { display: block; }
+    .form-success { display: none; text-align: center; padding: 36px 18px; }
+    .form-success.active { display: block; animation: scaleIn 0.6s cubic-bezier(0.22, 1, 0.36, 1); }
+    .form-success-icon {
+      width: 72px; height: 72px; border-radius: 50%;
+      background: rgba(255,107,26,0.15);
+      display: flex; align-items: center; justify-content: center;
+      font-size: 2.2rem; margin: 0 auto 18px;
+    }
+    .form-success h3 { font-size: 1.2rem; font-weight: 800; color: var(--moss); margin-bottom: 8px; }
+    .form-success p { font-size: 0.86rem; color: var(--earth); line-height: 1.6; }
+
+    /* FOOTER */
+    footer { background: var(--moss-dark); padding: 36px 0 24px; text-align: center; }
+    .footer-inner { display: flex; flex-direction: column; align-items: center; gap: 16px; }
+    .footer-logo img { height: 30px; width: auto; opacity: 0.85; }
+    .footer-love {
+      font-size: 0.8rem; color: rgba(255,255,255,0.65); font-weight: 500;
+    }
+    .footer-love .heart { color: var(--poison-green); }
+    .footer-links { display: flex; gap: 22px; font-size: 0.74rem; }
+    .footer-links a { color: rgba(255,255,255,0.45); transition: color 0.3s ease; }
+    .footer-links a:hover { color: var(--poison-green); }
+    .footer-copy { font-size: 0.66rem; color: rgba(255,255,255,0.3); max-width: 520px; line-height: 1.6; padding: 0 20px; }
+
+    /* DESKTOP */
+    @media (min-width: 640px) {
+      .problem-grid { grid-template-columns: repeat(2, 1fr); }
+      .form-row { grid-template-columns: 1fr 1fr; }
+      .reviews-stats-bar {
+        flex-direction: row; justify-content: center; align-items: center; gap: 0;
+      }
+      .rs-item { flex: 1; }
+      .rs-divider { width: 1px; height: 50px; margin: 0; }
+      .review-card { width: calc(50% - 8px); }
+    }
+
+    @media (min-width: 1024px) {
+      .container { padding: 0 40px; }
+      nav { padding: 16px 0; }
+      .nav-logo img { height: 36px; }
+      .nav-cta { padding: 10px 22px; font-size: 0.82rem; }
+
+      .hero-content {
+        flex-direction: row;
+        padding: 130px 0 80px;
+        text-align: left;
+        align-items: center;
+        justify-content: space-between;
+        gap: 60px;
+      }
+      .hero-text {
+        flex: 1; order: 1; max-width: 580px; width: auto;
+      }
+      .hero-text .hero-trust-chips { justify-content: flex-start; }
+      .hero-mockup { order: 2; flex-shrink: 0; }
+      .book-container { width: 280px; height: 380px; }
+      .book-cover { padding: 32px 28px 24px; }
+      .book-title { font-size: 1.5rem; }
+      .book-year { font-size: 3.6rem; }
+      .book-logo-img { height: 22px; }
+      .book-eyebrow { font-size: 0.6rem; }
+      .book-branch { font-size: 0.54rem; max-width: 120px; }
+      .book-pages-count { font-size: 0.52rem; }
+      .book-badge { font-size: 0.68rem; padding: 7px 16px; right: 16px; }
+
+      .hero h1 { font-size: 3rem; line-height: 1.1; }
+      .hero-sub { font-size: 1rem; margin: 0 0 22px; max-width: 540px; }
+      .hero-badge { margin-bottom: 18px; }
+
+      .section-problem, .section-solution, .section-reviews, .section-form {
+        padding: 100px 0;
+      }
+      .section-consequence { padding: 110px 0; }
+      .section-title { font-size: 2.2rem; }
+      .consequence-number { font-size: 4.5rem; }
+      .consequence-stats { max-width: 620px; gap: 20px; }
+      .consequence-stat-number { font-size: 1.9rem; }
+
+      .solution-content { flex-direction: row; gap: 80px; align-items: center; }
+      .solution-text { flex: 1; order: 1; }
+      .solution-mockup { order: 2; flex-shrink: 0; }
+      .solution-title { font-size: 2.1rem; }
+
+      .review-card { width: calc(33.333% - 11px); }
+      .rs-num { font-size: 2.2rem; }
+
+      .form-wrapper { padding: 44px 40px; }
+
+      .proof-bar-track img { height: 52px; }
+      .proof-bar-track { gap: 48px; }
+    }
+  </style>
+</head>
+<body>
+
+  <!-- NAV -->
+  <nav id="navbar">
+    <div class="container nav-inner">
+      <a href="/" class="nav-logo" aria-label="Zur&uuml;ck zum Seitenanfang">
+        <img src="logo-white-sm.png" alt="GreenCareers">
+      </a>
+      <a href="#formular" class="nav-cta">Report sichern &rarr;</a>
+    </div>
+  </nav>
+
+  <!-- HERO -->
+  <section class="hero">
+    <div class="hero-bg"></div>
+    <div class="hero-vignette"></div>
+    <div class="container hero-content">
+      <div class="hero-text">
+        <div class="hero-badge"><span class="hero-badge-dot"></span> Kostenlos f&uuml;r Hoch- &amp; Rohbau-Inhaber</div>
+        <h1>Endlich Fachkr&auml;fte <span class="highlight">planbar finden</span> &ndash; nicht nur hoffen.</h1>
+        <p class="hero-sub">
+          Der Recruiting-Report 2026 zeigt Hoch- und Rohbau-Betrieben auf 32 Seiten, welche Kan&auml;le wirklich Polier, Bauleiter und Maurer bringen &ndash; und wie Sie offene Stellen in unter 90 Tagen besetzen statt 281.
+        </p>
+        <a href="#formular" class="btn-primary">Report kostenlos sichern &rarr;</a>
+        <div class="hero-trust-chips">
+          <span class="hero-trust-chip">&#128274; DSGVO-konform</span>
+          <span class="hero-trust-chip">
+            <span class="g-mini"><span>G</span><span>o</span><span>o</span><span>g</span><span>l</span><span>e</span></span>
+            <span class="stars-mini">&#9733;&#9733;&#9733;&#9733;&#9733;</span>
+            <strong>4,9</strong>
+          </span>
+          <span class="hero-trust-chip"><strong>500+</strong> Arbeitgeber</span>
+          <span class="hero-trust-chip"><strong>30.000+</strong> Fachkr&auml;fte</span>
+        </div>
+      </div>
+
+      <div class="hero-mockup">
+        <div class="book-container">
+          <div class="book-glow"></div>
+          <span class="book-badge">Gratis</span>
+          <div class="book">
+            <div class="book-pages-edge"></div>
+            <div class="book-cover">
+              <div class="book-spine-edge"></div>
+              <div class="book-top">
+                <img class="book-logo-img" src="logo-white-sm.png" alt="GreenCareers">
+              </div>
+              <div class="book-title-block">
+                <div class="book-eyebrow">Der Branchen-Report</div>
+                <div class="book-title">Recruiting-<br>Report</div>
+                <div class="book-year">2026</div>
+                <div class="book-divider"></div>
+              </div>
+              <div class="book-bottom">
+                <span class="book-branch">Hoch- &amp;<br>Rohbau</span>
+                <span class="book-pages-count">32 Seiten</span>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- BRANCHEN-FAKTEN-BAR (Hochbau-Realität statt Kundenlogos) -->
+  <div class="proof-bar">
+    <div class="proof-bar-label">Marktrealit&auml;t 2026 im Hoch- und Rohbau</div>
+    <div class="proof-bar-track" id="facts-track" style="justify-content:center; animation:none; gap:32px; flex-wrap:wrap; padding:0 24px;">
+      <div style="display:flex; flex-direction:column; align-items:center; padding:8px 14px;">
+        <span style="font-size:1.15rem; font-weight:800; color:var(--moss);">281 Tage</span>
+        <span style="font-size:0.7rem; color:var(--earth);">Vakanzzeit Hochbau (BA)</span>
+      </div>
+      <div style="display:flex; flex-direction:column; align-items:center; padding:8px 14px;">
+        <span style="font-size:1.15rem; font-weight:800; color:var(--moss);">79.000&nbsp;&euro;</span>
+        <span style="font-size:0.7rem; color:var(--earth);">Vakanzkosten pro Stelle &amp; Jahr</span>
+      </div>
+      <div style="display:flex; flex-direction:column; align-items:center; padding:8px 14px;">
+        <span style="font-size:1.15rem; font-weight:800; color:var(--moss);">&minus;20&nbsp;%</span>
+        <span style="font-size:0.7rem; color:var(--earth);">Maurer-Azubis, 2. Jahr in Folge (ZDB)</span>
+      </div>
+      <div style="display:flex; flex-direction:column; align-items:center; padding:8px 14px;">
+        <span style="font-size:1.15rem; font-weight:800; color:var(--moss);">185.000</span>
+        <span style="font-size:0.7rem; color:var(--earth);">Wohnungen 2026 &ndash; 15-Jahres-Tief (ifo)</span>
+      </div>
+      <div style="display:flex; flex-direction:column; align-items:center; padding:8px 14px;">
+        <span style="font-size:1.15rem; font-weight:800; color:var(--moss);">27 Monate</span>
+        <span style="font-size:0.7rem; color:var(--earth);">Genehmigung bis Fertigstellung</span>
+      </div>
+    </div>
+  </div>
+
+  <!-- FORM -->
+  <section class="section-form" id="formular">
+    <div class="container">
+      <div class="form-wrapper reveal-scale">
+
+        <!-- Quiz-Header -->
+        <div class="form-header" id="quiz-header">
+          <div class="section-label" style="justify-content:center;"><span class="section-label-line"></span> Recruiting-Report 2026</div>
+          <h2 id="quiz-h2">Kostenloser 32-Seiten-Report &mdash; in 60&nbsp;Sek. anfordern.</h2>
+          <p id="quiz-h2-sub">2 schnelle Fragen, dann erhalten Sie den Report per E-Mail. Keine Verpflichtung.</p>
+        </div>
+
+        <!-- Progress -->
+        <div class="quiz-progress" id="quiz-progress">
+          <div class="quiz-progress-label" id="quiz-progress-label">Schritt 1 von 5</div>
+          <div class="quiz-progress-bar"><div class="quiz-progress-fill" id="quiz-progress-fill" style="width:20%"></div></div>
+        </div>
+
+        <div id="lead-form">
+
+          <!-- ===== STEP 1 / 5 — Position ===== -->
+          <div class="quiz-slide is-active" data-slide="1">
+            <h3 class="quiz-question">Welche Position suchen Sie aktuell?</h3>
+            <p class="quiz-subtext">Damit wir den Report mit den richtigen Benchmarks f&uuml;r Sie aufbereiten.</p>
+            <div class="quiz-options">
+              <button type="button" class="quiz-option" data-field="position" data-value="maurer">Maurer / Beton- &amp; Stahlbetonbauer</button>
+              <button type="button" class="quiz-option" data-field="position" data-value="polier">Polier Hochbau</button>
+              <button type="button" class="quiz-option" data-field="position" data-value="bauleiter">Bauleiter Hochbau / Schl&uuml;sselfertigbau</button>
+              <button type="button" class="quiz-option" data-field="position" data-value="schalungsbauer">Schalungsbauer / Zimmerer</button>
+              <button type="button" class="quiz-option" data-field="position" data-value="mehrere">Mehrere Positionen gleichzeitig</button>
+              <button type="button" class="quiz-option" data-field="position" data-value="anderes_gewerk">Anderes Gewerk</button>
+            </div>
+          </div>
+
+          <!-- ===== STEP 2 / 5 — Mitarbeiterzahl ===== -->
+          <div class="quiz-slide" data-slide="2">
+            <h3 class="quiz-question">Wie viele Mitarbeiter besch&auml;ftigt Ihr Betrieb?</h3>
+            <p class="quiz-subtext">F&uuml;r passende Strategie-Empfehlungen je nach Betriebsgr&ouml;&szlig;e.</p>
+            <div class="quiz-options">
+              <button type="button" class="quiz-option" data-field="mitarbeiter_range" data-value="0-14">Bis 14 Mitarbeiter</button>
+              <button type="button" class="quiz-option" data-field="mitarbeiter_range" data-value="15-40">15&ndash;40 Mitarbeiter</button>
+              <button type="button" class="quiz-option" data-field="mitarbeiter_range" data-value="41-100">41&ndash;100 Mitarbeiter</button>
+              <button type="button" class="quiz-option" data-field="mitarbeiter_range" data-value="101-250">101&ndash;250 Mitarbeiter</button>
+              <button type="button" class="quiz-option" data-field="mitarbeiter_range" data-value="250+">&Uuml;ber 250 Mitarbeiter</button>
+            </div>
+            <button type="button" class="quiz-back" data-back="1">&larr; Zur&uuml;ck</button>
+          </div>
+
+          <!-- ===== STEP 3 / 5 — E-Mail-Gate ===== -->
+          <div class="quiz-slide" data-slide="3">
+            <h3 class="quiz-question" id="quiz-step3-headline">Sehr gut. Wohin senden wir Ihren Report?</h3>
+            <p class="quiz-subtext" id="quiz-step3-sub">Tragen Sie Ihre gesch&auml;ftliche E-Mail ein &mdash; der Report kommt innerhalb 5&nbsp;Min. in Ihr Postfach.</p>
+            <div data-tpl="tpl-fields-email"></div>
+            <button type="button" class="quiz-cta" data-next-from="3">Weiter &rarr;</button>
+            <div class="quiz-error-msg" id="quiz-step3-error">Bitte tragen Sie eine g&uuml;ltige E-Mail-Adresse ein.</div>
+            <button type="button" class="quiz-back" data-back="2">&larr; Zur&uuml;ck</button>
+          </div>
+
+          <!-- ===== STEP 4 / 5 — Name + (progressive) Firma ===== -->
+          <div class="quiz-slide" data-slide="4">
+            <h3 class="quiz-question">F&uuml;r welchen Betrieb erstellen wir den Report?</h3>
+            <p class="quiz-subtext">Damit wir den Report f&uuml;r Sie pers&ouml;nlich anpassen k&ouml;nnen.</p>
+
+            <!-- Sub-Step 4a: Name -->
+            <div data-tpl="tpl-fields-name"></div>
+
+            <button type="button" class="quiz-cta" id="quiz-step4-cta" disabled>Weiter &rarr;</button>
+            <div class="quiz-error-msg" id="quiz-step4-error">Bitte tragen Sie Vor-, Nachnamen und Firmennamen ein.</div>
+            <button type="button" class="quiz-back" data-back="3">&larr; Zur&uuml;ck</button>
+          </div>
+
+          <!-- ===== STEP 5 / 5 — Telefon + DSGVO + Submit ===== -->
+          <div class="quiz-slide" data-slide="5">
+            <h3 class="quiz-question">Wohin d&uuml;rfen wir den Report per WhatsApp senden?</h3>
+            <p class="quiz-subtext">So haben Sie den Report direkt auf dem Handy &mdash; zus&auml;tzlich zur E-Mail-Kopie.</p>
+
+            <div data-tpl="tpl-fields-phone"></div>
+
+            <button type="button" class="quiz-cta" id="quiz-final-submit" disabled>Report jetzt sichern &rarr;</button>
+            <div class="quiz-error-msg" id="quiz-step5-error">Bitte Handynummer eintragen und Datenschutz best&auml;tigen.</div>
+
+            <div class="quiz-trust-row">
+              <span><span class="quiz-trust-dot"></span> Sichere SSL-Verschl&uuml;sselung</span>
+              <span><span class="quiz-trust-dot"></span> DSGVO-konform</span>
+              <span><span class="quiz-trust-dot"></span> Kein Spam, kein Newsletter</span>
+            </div>
+            <button type="button" class="quiz-back" data-back="4">&larr; Zur&uuml;ck</button>
+          </div>
+
+        </div>
+
+        
+        <!-- Kontaktfeld-Templates: Inhalte sind inert, bis mountContactFields()
+             sie bei der ersten Quiz-Interaktion einsetzt (Meta-IAB-Autoscroll-Fix). -->
+        <template id="tpl-fields-email"><div class="quiz-input-group">
+              <div class="quiz-input-wrap">
+                <svg class="quiz-input-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"/><polyline points="22,6 12,13 2,6"/></svg>
+                <input type="email" class="quiz-input" id="email" name="email" placeholder="ihre@firma.de" autocomplete="email" autocapitalize="none" spellcheck="false" inputmode="email">
+              </div>
+            </div></template>
+        <template id="tpl-fields-name"><div class="quiz-input-group" data-substep="name">
+              <div class="quiz-input-wrap">
+                <svg class="quiz-input-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M20 21v-2a4 4 0 0 0-4-4H8a4 4 0 0 0-4 4v2"/><circle cx="12" cy="7" r="4"/></svg>
+                <input type="text" class="quiz-input" id="fullname" placeholder="Vor- und Nachname" autocomplete="name" autocapitalize="words" spellcheck="false">
+              </div>
+            </div>
+
+            <!-- Sub-Step 4b: Firma (initial hidden) -->
+            <div class="quiz-input-group" data-substep="firma" style="display:none;">
+              <div class="quiz-input-wrap">
+                <svg class="quiz-input-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M3 21h18"/><path d="M5 21V7l8-4v18"/><path d="M19 21V11l-6-4"/></svg>
+                <input type="text" class="quiz-input" id="unternehmen" name="unternehmen" placeholder="z. B. Müller Hochbau GmbH" autocomplete="organization" autocapitalize="words" spellcheck="false">
+              </div>
+            </div>
+
+            </template>
+        <template id="tpl-fields-phone"><div class="quiz-input-group">
+              <div class="quiz-phone-wrap">
+                <span class="quiz-phone-flag">🇩🇪 +49</span>
+                <input type="tel" class="quiz-input" id="phone" name="phone" placeholder="170 1234567" autocomplete="tel" inputmode="tel">
+              </div>
+            </div>
+
+            <div class="quiz-privacy">
+              <input type="checkbox" id="privacy" name="privacy">
+              <label for="privacy">Ich stimme der <a href="https://www.green-careers.de/datenschutz" target="_blank" rel="noopener">Datenschutzerkl&auml;rung</a> zu und bin einverstanden, von GreenCareers kontaktiert zu werden.</label>
+            </div>
+
+            </template>
+
+        <!-- Success-State -->
+        <div class="form-success" id="form-success">
+          <div class="form-success-icon">&#9989;</div>
+          <h3>Freigeschaltet.</h3>
+          <p>Ihr Recruiting-Report 2026 ist bereit &ndash; viel Erfolg bei der n&auml;chsten Einstellung.</p>
+          <a href="recruiting-report-2026-hochbau.pdf" id="report-download-btn" target="_blank" rel="noopener"
+             style="display:inline-block;margin-top:18px;background:var(--gradient-cta,linear-gradient(135deg,#FF6B1A,#F59E0B));color:#fff;font-weight:800;font-size:0.95rem;padding:15px 26px;border-radius:50px;text-decoration:none;box-shadow:0 6px 22px rgba(255,107,26,0.35);">
+            Report jetzt &ouml;ffnen (PDF, 32 Seiten) &rarr;
+          </a>
+          <p style="margin-top:16px;font-size:0.82rem;color:var(--earth);line-height:1.6;">
+            Ihre Kopie ist au&szlig;erdem per <strong>WhatsApp und E-Mail</strong> unterwegs &ndash; so haben Sie den Report auch unterwegs griffbereit.
+          </p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- PROBLEM -->
+  <section class="section-problem">
+    <div class="container">
+      <div class="section-label reveal"><span class="section-label-line"></span> Das Problem</div>
+      <h2 class="section-title reveal">Recruiting im Hoch- und Rohbau ist 2026 kaputt &ndash; und kostet Sie Auftr&auml;ge.</h2>
+      <p class="section-sub reveal">Vier Realit&auml;ten, mit denen Inhaber und Gesch&auml;ftsf&uuml;hrer von Hoch- und Rohbau-Betrieben t&auml;glich konfrontiert sind:</p>
+
+      <div class="problem-grid">
+        <div class="problem-card reveal stagger-1">
+          <div class="problem-icon">&#128683;</div>
+          <h3>Stellenanzeigen liefern nicht mehr</h3>
+          <p>Indeed, StepStone, Bauhandwerk-Portale &ndash; viel Aufwand, kaum qualifizierte Bewerbungen. Und wenn doch, dann selten passende Maurer, Poliere oder Bauleiter Hochbau.</p>
+        </div>
+        <div class="problem-card reveal stagger-2">
+          <div class="problem-icon">&#9202;</div>
+          <h3>281 Tage bis zur Besetzung</h3>
+          <p>Offene Stellen im Handwerk bleiben im Schnitt 281 Tage vakant (BA / StepStone, 2024). Auftr&auml;ge k&ouml;nnen nicht angenommen werden, Umsatz geht verloren, Ihr Team brennt aus.</p>
+        </div>
+        <div class="problem-card reveal stagger-3">
+          <div class="problem-icon">&#128176;</div>
+          <h3>Agenturen sind unwirtschaftlich</h3>
+          <p>Personalvermittler verlangen 25&ndash;35&nbsp;% des Jahresgehalts pro Platzierung. Bei einem Polier mit 52.000&nbsp;&euro; Jahresgehalt sind das schnell &uuml;ber 13.000&nbsp;&euro; &ndash; bei einem Bauleiter Hochbau bis zu 25.000&nbsp;&euro;.</p>
+        </div>
+        <div class="problem-card reveal stagger-4">
+          <div class="problem-icon">&#128260;</div>
+          <h3>Recruiting bleibt Gl&uuml;ckssache</h3>
+          <p>Ohne Kennzahlen, Prozess und System ist Mitarbeitergewinnung Zufall. Und Zufall ist im strukturellen Fachkr&auml;ftemarkt 2026 das gef&auml;hrlichste Gesch&auml;ftsmodell.</p>
+        </div>
+      </div>
+
+      <div class="problem-closer reveal">
+        Wenn auch nur einer dieser Punkte auf Sie zutrifft &ndash; der Recruiting-Report 2026 zeigt Ihnen genau, wie planbare Mitarbeitergewinnung aussieht. Konkret, mit Zahlen, ohne Buzzwords.
+      </div>
+    </div>
+  </section>
+
+  <!-- CONSEQUENCE -->
+  <section class="section-consequence">
+    <div class="consequence-bg-dots"></div>
+    <div class="consequence-bg-glow"></div>
+    <div class="container">
+      <div class="consequence-label reveal">So viel kostet der Stillstand</div>
+      <div class="consequence-number reveal">&euro;<span data-target="79000">0</span></div>
+      <div class="consequence-text reveal">
+        kostet eine unbesetzte Fachkraft-Stelle pro Jahr im Durchschnitt &ndash; durch entgangene Auftr&auml;ge, &Uuml;berstunden und Produktivit&auml;tsverlust.
+      </div>
+      <div class="consequence-source reveal">Quelle: StepStone / Bundesagentur f&uuml;r Arbeit, 2024</div>
+      <div class="consequence-divider reveal"></div>
+      <div class="consequence-stats">
+        <div class="reveal stagger-1">
+          <div class="consequence-stat-number">&oslash;&nbsp;<span data-target="270">0</span></div>
+          <div class="consequence-stat-label">Tage Vakanzzeit<br>im Bauhauptgewerbe</div>
+        </div>
+        <div class="reveal stagger-2">
+          <div class="consequence-stat-number"><span data-target="3">0</span> von 4</div>
+          <div class="consequence-stat-label">der Hochbau-Betriebe<br>vom Fachkr&auml;ftemangel betroffen</div>
+        </div>
+        <div class="reveal stagger-3">
+          <div class="consequence-stat-number"><span data-target="81">0</span>%</div>
+          <div class="consequence-stat-label">aller Bauunternehmen<br>vom Fachkr&auml;ftemangel betroffen</div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- SOLUTION -->
+  <section class="section-solution">
+    <div class="container">
+      <div class="solution-content">
+        <div class="solution-text reveal">
+          <div class="solution-overtitle">Die L&ouml;sung &ndash; kostenlos f&uuml;r Sie</div>
+          <h2 class="solution-title">Recruiting-Report 2026: Ihre Roadmap f&uuml;r planbare Mitarbeitergewinnung.</h2>
+          <ul class="solution-list">
+            <li><span class="solution-check">&check;</span> <span><strong>Aktuelle Branchen-Benchmarks:</strong> Cost per Hire, Time to Fill und Fluktuationsquoten im Hochbau</span></li>
+            <li><span class="solution-check">&check;</span> <span><strong>Die 5 effektivsten Kan&auml;le</strong> f&uuml;r Polier- und Bauleiter-Gewinnung &ndash; mit ehrlichem Kosten-Nutzen-Vergleich</span></li>
+            <li><span class="solution-check">&check;</span> <span><strong>Praxis-Strategien</strong> von Betrieben, die ihre Stellen in unter 45 Tagen besetzen</span></li>
+            <li><span class="solution-check">&check;</span> <span><strong>Checkliste:</strong> 7 Stellschrauben, die Ihre Arbeitgebermarke sofort st&auml;rken</span></li>
+            <li><span class="solution-check">&check;</span> <span><strong>KI-Matching im Recruiting:</strong> was funktioniert &ndash; und was nur Hype ist</span></li>
+            <li><span class="solution-check">&check;</span> <span><strong>Vorlage:</strong> Ihr pers&ouml;nlicher Recruiting-KPI-Dashboard-Entwurf</span></li>
+          </ul>
+          <p class="solution-value">Normalerweise Teil unserer kostenpflichtigen Beratung. F&uuml;r Sie &ndash; gratis.</p>
+          <a href="#formular" class="btn-primary">Jetzt gratis sichern &rarr;</a>
+        </div>
+
+        <div class="solution-mockup reveal-scale">
+          <div class="solution-mockup-wrapper">
+            <div class="book-container" style="transform: scale(1.1);">
+              <div class="book-glow"></div>
+              <div class="book">
+                <div class="book-pages-edge"></div>
+                <div class="book-cover">
+                  <div class="book-spine-edge"></div>
+                  <div class="book-top">
+                    <img class="book-logo-img" src="logo-white-sm.png" alt="GreenCareers">
+                  </div>
+                  <div class="book-title-block">
+                    <div class="book-eyebrow">Der Branchen-Report</div>
+                    <div class="book-title">Recruiting-<br>Report</div>
+                    <div class="book-year">2026</div>
+                    <div class="book-divider"></div>
+                  </div>
+                  <div class="book-bottom">
+                    <span class="book-branch">Hoch- &amp;<br>Rohbau</span>
+                    <span class="book-pages-count">32 Seiten</span>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- REVIEWS – mit Carousel -->
+  <section class="section-reviews">
+    <div class="container">
+      <div class="reviews-header-center reveal">
+        <div class="section-label" style="justify-content:center;"><span class="section-label-line"></span> Vertrauen</div>
+        <h2 class="section-title">Das sagen Hochbau-Inhaber &uuml;ber GreenCareers</h2>
+      </div>
+
+      <div style="text-align:center;" class="reveal">
+        <div class="google-badge">
+          <span class="g-logo">
+            <span>G</span><span>o</span><span>o</span><span>g</span><span>l</span><span>e</span>
+          </span>
+          <span class="rating-num">4,9</span>
+          <span class="rating-stars">&#9733;&#9733;&#9733;&#9733;&#9733;</span>
+        </div>
+      </div>
+
+      <div class="reviews-stats-bar reveal">
+        <div class="rs-item">
+          <span class="rs-num">500+</span>
+          <span class="rs-label">Bau-Betriebe vertrauen GreenCareers</span>
+        </div>
+        <div class="rs-divider"></div>
+        <div class="rs-item">
+          <span class="rs-num">15.000+</span>
+          <span class="rs-label">Bau-Fachkr&auml;fte im Pool</span>
+        </div>
+        <div class="rs-divider"></div>
+        <div class="rs-item">
+          <span class="rs-num">&lt;&nbsp;90</span>
+          <span class="rs-label">Tage bis zur Einstellung</span>
+        </div>
+      </div>
+
+      <div class="reviews-carousel-wrap reveal">
+        <div class="reviews-viewport">
+          <div class="reviews-track" id="reviews-track">
+            <div class="review-card">
+              <div class="review-header">
+                <div class="review-avatar avatar-1">TK</div>
+                <div class="review-meta">
+                  <p class="review-name">Tobias Knauf</p>
+                  <p class="review-date">vor einer Woche</p>
+                </div>
+              </div>
+              <div class="review-stars">&#9733;&#9733;&#9733;&#9733;&#9733;</div>
+              <p class="review-text">&bdquo;Nach kurzer Zeit hatte ich mehr als 20 Bewerber auf meine ausgeschriebene Stelle. Ich kann GreenCareers jedem Arbeitgeber und Arbeitnehmer nur empfehlen.&ldquo;</p>
+              <span class="review-verified">&#10003; Verifizierte Google-Bewertung</span>
+            </div>
+            <div class="review-card">
+              <div class="review-header">
+                <div class="review-avatar avatar-2">BD</div>
+                <div class="review-meta">
+                  <p class="review-name">Boas Diehl</p>
+                  <p class="review-date">vor 2 Wochen</p>
+                </div>
+              </div>
+              <div class="review-stars">&#9733;&#9733;&#9733;&#9733;&#9733;</div>
+              <p class="review-text">&bdquo;Unkomplizierte Plattform, bei der es einen guten R&uuml;cklauf von mehreren Bewerbern pro Tag gegeben hat. Eine gute, offene Kommunikation erleichtert die Zusammenarbeit!&ldquo;</p>
+              <span class="review-verified">&#10003; Verifizierte Google-Bewertung</span>
+            </div>
+            <div class="review-card">
+              <div class="review-header">
+                <div class="review-avatar avatar-3">AH</div>
+                <div class="review-meta">
+                  <p class="review-name">Alexander Hildebrand</p>
+                  <p class="review-date">vor 3 Wochen</p>
+                </div>
+              </div>
+              <div class="review-stars">&#9733;&#9733;&#9733;&#9733;&#9733;</div>
+              <p class="review-text">&bdquo;Die Zusammenarbeit mit GreenCareers war insgesamt sehr positiv. Das Team ist freundlich, kompetent und engagiert. Besonders angenehm war die offene und wertsch&auml;tzende Kommunikation.&ldquo;</p>
+              <span class="review-verified">&#10003; Verifizierte Google-Bewertung</span>
+            </div>
+            <div class="review-card">
+              <div class="review-header">
+                <div class="review-avatar avatar-4">MT</div>
+                <div class="review-meta">
+                  <p class="review-name">Maryna T&uuml;rr</p>
+                  <p class="review-date">vor 4 Wochen</p>
+                </div>
+              </div>
+              <div class="review-stars">&#9733;&#9733;&#9733;&#9733;&#9733;</div>
+              <p class="review-text">&bdquo;Gute Plattform, wo sich Fachkr&auml;fte einfach unkompliziert bewerben k&ouml;nnen. Gute schnelle Kommunikation mit dem GreenCareers-Team.&ldquo;</p>
+              <span class="review-verified">&#10003; Verifizierte Google-Bewertung</span>
+            </div>
+            <div class="review-card">
+              <div class="review-header">
+                <div class="review-avatar avatar-5">SK</div>
+                <div class="review-meta">
+                  <p class="review-name">Stefan K&ouml;hler</p>
+                  <p class="review-date">vor 5 Wochen</p>
+                </div>
+              </div>
+              <div class="review-stars">&#9733;&#9733;&#9733;&#9733;&#9733;</div>
+              <p class="review-text">&bdquo;Endlich ein Anbieter, der unsere Branche versteht. Kein Agentur-Geschw&auml;tz, keine leeren Versprechen &ndash; sondern passende Fachkr&auml;fte. Wir haben in 6 Wochen zwei Vorarbeiter eingestellt.&ldquo;</p>
+              <span class="review-verified">&#10003; Verifizierte Google-Bewertung</span>
+            </div>
+            <div class="review-card">
+              <div class="review-header">
+                <div class="review-avatar avatar-1">AW</div>
+                <div class="review-meta">
+                  <p class="review-name">Andrea Wagner</p>
+                  <p class="review-date">vor 6 Wochen</p>
+                </div>
+              </div>
+              <div class="review-stars">&#9733;&#9733;&#9733;&#9733;&#9733;</div>
+              <p class="review-text">&bdquo;Sehr professionelles Team, das die Bed&uuml;rfnisse von Bau-Betrieben wirklich versteht. Schneller R&uuml;cklauf, klare Prozesse, faire Konditionen. Klare Empfehlung.&ldquo;</p>
+              <span class="review-verified">&#10003; Verifizierte Google-Bewertung</span>
+            </div>
+          </div>
+        </div>
+        <div class="carousel-controls">
+          <button class="carousel-btn" id="prev-btn" aria-label="Vorherige Bewertung">&larr;</button>
+          <div class="carousel-dots" id="dots"></div>
+          <button class="carousel-btn" id="next-btn" aria-label="N&auml;chste Bewertung">&rarr;</button>
+        </div>
+      </div>
+    </div>
+  </section>
+
+
+  <!-- FOOTER -->
+  <footer>
+    <div class="container footer-inner">
+      <a href="https://www.green-careers.de" class="footer-logo" aria-label="GreenCareers">
+        <img src="logo-white-sm.png" alt="GreenCareers">
+      </a>
+      <div class="footer-love">Made with <span class="heart">&hearts;</span> in Germany f&uuml;r den Bau</div>
+      <div class="footer-links">
+        <a href="https://www.green-careers.de/datenschutz" target="_blank" rel="noopener">Datenschutz</a>
+        <a href="https://www.green-careers.de/impressum" target="_blank" rel="noopener">Impressum</a>
+        <a href="https://www.green-careers.de/agb" target="_blank" rel="noopener">AGB</a>
+      </div>
+      <div class="footer-copy">&copy; 2026 GreenCareers &ndash; Die Karriereplattform f&uuml;r das Bau-Hauptgewerbe. Kennzahlen basieren auf &ouml;ffentlich verf&uuml;gbaren Statistiken (Bundesagentur f&uuml;r Arbeit, StepStone, Destatis, Hauptverband Deutsche Bauindustrie, KfW, ZDB).</div>
+    </div>
+  </footer>
+
+  <!-- ============================================
+       KONFIGURATION: Hier Make-Webhook URL eintragen
+       ============================================ -->
+  <script>
+    // *** MAKE WEBHOOK URL HIER EINTRAGEN ***
+    // Diese URL erhältst du in Make.com nachdem du das Szenario angelegt hast:
+    // 1. Neues Szenario in Make.com erstellen
+    // 2. Trigger: "Webhooks > Custom webhook" (Trigger-Modul)
+    // 3. URL aus dem Webhook-Modul kopieren und unten einsetzen
+    // 4. Im Szenario danach: Slack (Channel: Sales) + HTTP-Request zum Dashboard
+    const MAKE_WEBHOOK_URL = 'https://hook.eu1.make.com/6ds3it3jipdo2u17aep5g63k51zqb7hm';
+
+    // lpTurnstileToken + onLpTurnstileSuccess sind im <head> definiert (vor Turnstile-Script)
+  </script>
+
+  <script>
+    // Navbar scroll
+    const navbar = document.getElementById('navbar');
+    let ticking = false;
+    window.addEventListener('scroll', () => {
+      if (!ticking) {
+        requestAnimationFrame(() => {
+          navbar.classList.toggle('scrolled', window.scrollY > 60);
+          ticking = false;
+        });
+        ticking = true;
+      }
+    });
+
+    // Reveal observer
+    const revealObserver = new IntersectionObserver((entries) => {
+      entries.forEach(entry => {
+        if (entry.isIntersecting) entry.target.classList.add('visible');
+      });
+    }, { threshold: 0.1, rootMargin: '0px 0px -40px 0px' });
+    document.querySelectorAll('.reveal, .reveal-scale').forEach(el => revealObserver.observe(el));
+
+    // Counter
+    function animateCounter(el) {
+      const target = parseInt(el.dataset.target);
+      const duration = 2200;
+      const step = target / (duration / 16);
+      let current = 0;
+      const timer = setInterval(() => {
+        current += step;
+        if (current >= target) { current = target; clearInterval(timer); }
+        el.textContent = Math.floor(current).toLocaleString('de-DE');
+      }, 16);
+    }
+    const counterObserver = new IntersectionObserver((entries) => {
+      entries.forEach(entry => {
+        if (entry.isIntersecting && !entry.target.dataset.animated) {
+          entry.target.dataset.animated = 'true';
+          animateCounter(entry.target);
+        }
+      });
+    }, { threshold: 0.5 });
+    document.querySelectorAll('[data-target]').forEach(el => counterObserver.observe(el));
+
+    // Smooth scroll
+    document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+      anchor.addEventListener('click', e => {
+        e.preventDefault();
+        const t = document.querySelector(anchor.getAttribute('href'));
+        if (t) t.scrollIntoView({ behavior: 'smooth', block: 'start' });
+      });
+    });
+
+    // ===== REVIEW CAROUSEL =====
+    const track = document.getElementById('reviews-track');
+    const cards = track.querySelectorAll('.review-card');
+    const prevBtn = document.getElementById('prev-btn');
+    const nextBtn = document.getElementById('next-btn');
+    const dotsContainer = document.getElementById('dots');
+    let currentIndex = 0;
+
+    function getCardsPerView() {
+      if (window.innerWidth >= 1024) return 3;
+      if (window.innerWidth >= 640) return 2;
+      return 1;
+    }
+
+    function getMaxIndex() {
+      return Math.max(0, cards.length - getCardsPerView());
+    }
+
+    function updateDots() {
+      const maxIndex = getMaxIndex();
+      dotsContainer.innerHTML = '';
+      for (let i = 0; i <= maxIndex; i++) {
+        const dot = document.createElement('button');
+        dot.className = 'carousel-dot' + (i === currentIndex ? ' active' : '');
+        dot.setAttribute('aria-label', `Zu Bewertung ${i + 1}`);
+        dot.addEventListener('click', () => goTo(i));
+        dotsContainer.appendChild(dot);
+      }
+    }
+
+    function updateCarousel() {
+      const cardsPerView = getCardsPerView();
+      const cardWidth = cards[0].getBoundingClientRect().width;
+      const gap = 16;
+      const offset = currentIndex * (cardWidth + gap);
+      track.style.transform = `translateX(-${offset}px)`;
+
+      const maxIndex = getMaxIndex();
+      prevBtn.disabled = currentIndex === 0;
+      nextBtn.disabled = currentIndex >= maxIndex;
+      updateDots();
+    }
+
+    function goTo(index) {
+      const maxIndex = getMaxIndex();
+      currentIndex = Math.max(0, Math.min(index, maxIndex));
+      updateCarousel();
+    }
+
+    prevBtn.addEventListener('click', () => goTo(currentIndex - 1));
+    nextBtn.addEventListener('click', () => goTo(currentIndex + 1));
+
+    // Touch swipe support
+    let touchStartX = 0;
+    let touchEndX = 0;
+    track.addEventListener('touchstart', e => { touchStartX = e.changedTouches[0].screenX; }, { passive: true });
+    track.addEventListener('touchend', e => {
+      touchEndX = e.changedTouches[0].screenX;
+      const diff = touchStartX - touchEndX;
+      if (Math.abs(diff) > 50) {
+        if (diff > 0) goTo(currentIndex + 1);
+        else goTo(currentIndex - 1);
+      }
+    }, { passive: true });
+
+    window.addEventListener('resize', () => {
+      currentIndex = Math.min(currentIndex, getMaxIndex());
+      updateCarousel();
+    });
+
+    // Wait for fonts/images
+    setTimeout(updateCarousel, 100);
+
+    // =====================================================
+    // QUIZ-FUNNEL ENGINE (5 Steps mit Lead-Qualifying)
+    // - Step-Tracking → /api/recruiting/funnel-event (1st-Party)
+    // - Meta Pixel Custom Events pro Step
+    // - Submit → Make-Webhook (gleicher Payload + Quiz-Felder)
+    // =====================================================
+
+    // Tracking-Konfiguration
+    const LANDINGPAGE_ID = 'recruiting-report-2026-hochbau';
+    const FUNNEL_EVENT_ENDPOINT = 'https://gc-tracking-dashboard.vercel.app/api/recruiting/funnel-event';
+
+    // Session-ID (UUID, persist in localStorage)
+    function uuidv4() {
+      if (window.crypto && window.crypto.randomUUID) return window.crypto.randomUUID();
+      return 'xxxxxxxx-xxxx-4xxx-yxxx-xxxxxxxxxxxx'.replace(/[xy]/g, c => {
+        const r = Math.random() * 16 | 0;
+        const v = c === 'x' ? r : (r & 0x3 | 0x8);
+        return v.toString(16);
+      });
+    }
+    let sessionId;
+    try {
+      sessionId = localStorage.getItem('gc_quiz_session_' + LANDINGPAGE_ID);
+      if (!sessionId) {
+        sessionId = uuidv4();
+        localStorage.setItem('gc_quiz_session_' + LANDINGPAGE_ID, sessionId);
+      }
+    } catch(e) { sessionId = uuidv4(); }
+
+    // URL-Tracking-Parameter (mit localStorage-Persistenz f\u00fcr cross-page)
+    const urlParams = new URLSearchParams(window.location.search);
+    let trackingParams = {
+      utm_source:   urlParams.get('utm_source')   || '',
+      utm_medium:   urlParams.get('utm_medium')   || '',
+      utm_campaign: urlParams.get('utm_campaign') || '',
+      utm_content:  urlParams.get('utm_content')  || '',
+      utm_term:     urlParams.get('utm_term')     || '',
+      fbclid:       urlParams.get('fbclid')       || '',
+      gclid:        urlParams.get('gclid')        || ''
+    };
+    // Falls neue UTMs aus URL kommen \u2192 in localStorage persistieren
+    // Falls nicht \u2192 alte aus localStorage holen (z.B. wenn User per Direkt-Link reinkommt nach 1. Besuch)
+    try {
+      const hasFreshUtm = Object.values(trackingParams).some(v => v);
+      if (hasFreshUtm) {
+        localStorage.setItem('gc_tracking_' + LANDINGPAGE_ID, JSON.stringify(trackingParams));
+      } else {
+        const stored = localStorage.getItem('gc_tracking_' + LANDINGPAGE_ID);
+        if (stored) trackingParams = JSON.parse(stored);
+      }
+    } catch(e) {}
+
+    // Funnel-Event ans Dashboard (fire-and-forget)
+    function trackFunnelEvent(eventType, slideId) {
+      if (!IS_LIVE) { console.info('[GC Preview] funnel-event:', eventType, slideId || ''); return; }
+      const body = {
+        session_id: sessionId,
+        event_type: eventType,
+        slide_id: slideId || null,
+        landingpage_id: LANDINGPAGE_ID,
+        ...trackingParams,
+        page_url: window.location.href,
+        referrer: document.referrer || '',
+        user_agent: navigator.userAgent
+      };
+      try {
+        fetch(FUNNEL_EVENT_ENDPOINT, {
+          method: 'POST',
+          headers: { 'Content-Type': 'application/json' },
+          body: JSON.stringify(body),
+          keepalive: true,
+          credentials: 'omit'
+        }).catch(() => { /* tracking darf nie den Funnel brechen */ });
+      } catch(e) { /* silent */ }
+    }
+
+    function trackPixelEvent(name, params) {
+      if (!IS_LIVE) { console.info('[GC Preview] pixel:', name, params || {}); return; }
+      try {
+        if (typeof fbq === 'function') {
+          fbq('trackCustom', name, params || {});
+        }
+      } catch(e) { /* silent */ }
+    }
+
+    // =====================================================
+    // META-EVENT-TRACKING (Pixel + CAPI mit Dedup)
+    //
+    // Drei Qualitätsstufen, je Person genau einmal:
+    //   Lead                 → E-Mail eingetragen (Step 3)
+    //   CompleteRegistration → Formular vollständig abgesendet
+    //   Schedule             → Beratungstermin angefragt (Danke-Seite)
+    //
+    // Pixel (Browser) und CAPI (Server, via Dashboard-Endpoint)
+    // teilen sich pro Event dieselbe event_id → Meta dedupliziert.
+    // =====================================================
+    const LEAD_EVENT_ENDPOINT = 'https://gc-tracking-dashboard.vercel.app/api/tracking/lead-event';
+
+    function getCookie(name) {
+      try {
+        const m = document.cookie.match('(^|;)\\s*' + name + '\\s*=\\s*([^;]+)');
+        return m ? decodeURIComponent(m.pop()) : '';
+      } catch(e) { return ''; }
+    }
+    function getFbp() { return getCookie('_fbp'); }
+    function getFbc() {
+      const c = getCookie('_fbc');
+      if (c) return c;
+      // Fallback: aus fbclid rekonstruieren (Meta-Format fb.1.<ts>.<fbclid>)
+      if (trackingParams.fbclid) return 'fb.1.' + Date.now() + '.' + trackingParams.fbclid;
+      return '';
+    }
+
+    // Stabile event_id pro Stufe + Session (übersteht Reload → Meta dedupliziert)
+    function getEventId(stage) {
+      const key = 'gc_eid_' + stage + '_' + LANDINGPAGE_ID;
+      try {
+        let id = localStorage.getItem(key);
+        if (!id) {
+          id = uuidv4();
+          localStorage.setItem(key, id);
+        }
+        return id;
+      } catch(e) { return uuidv4(); }
+    }
+
+    // Server-Event ans Dashboard (sendet CAPI + legt/aktualisiert Lead in Supabase)
+    function sendLeadStageEvent(stage, eventId) {
+      if (!IS_LIVE) { console.info('[GC Preview] lead-event:', stage, eventId); return; }
+      const body = {
+        stage: stage,
+        event_id: eventId,
+        landingpage_id: LANDINGPAGE_ID,
+        session_id: sessionId,
+        email: answers.email,
+        vorname: answers.vorname || '',
+        nachname: answers.nachname || '',
+        unternehmen: answers.unternehmen || '',
+        phone: answers.phone || '',
+        position: answers.position || '',
+        mitarbeiter_range: answers.mitarbeiter_range || '',
+        ...trackingParams,
+        fbp: getFbp(),
+        fbc: getFbc(),
+        page_url: window.location.href,
+        referrer: document.referrer || '',
+        user_agent: navigator.userAgent
+      };
+      // Test-Support: ?tracking_debug=1 → Dry-Run (keine Writes/CAPI),
+      // ?test_capi=CODE → Events in Meta Test-Events-Tab
+      try {
+        const p = new URLSearchParams(window.location.search);
+        if (p.get('tracking_debug') === '1') body.dry_run = true;
+        if (p.get('test_capi')) body.test_event_code = p.get('test_capi');
+      } catch(e) {}
+      try {
+        fetch(LEAD_EVENT_ENDPOINT, {
+          method: 'POST',
+          headers: { 'Content-Type': 'application/json' },
+          body: JSON.stringify(body),
+          keepalive: true,
+          credentials: 'omit'
+        }).catch(() => { /* Tracking darf den Funnel nie brechen */ });
+      } catch(e) { /* silent */ }
+    }
+
+    // LP-View beim Page-Load
+    trackFunnelEvent('lp_view', null);
+
+    // Quiz-Start-Tracking (alle CTA-Buttons, die zum #formular fuehren)
+    document.querySelectorAll('a[href="#formular"], #sticky-cta').forEach(function(el) {
+      el.addEventListener('click', function() {
+        trackPixelEvent('Quiz_Started', { landingpage: LANDINGPAGE_ID, cta_location: el.className || 'unknown' });
+      }, { once: false });
+    });
+
+    // =====================================================
+    // SLIDE-NAVIGATION
+    // =====================================================
+    const slides = Array.from(document.querySelectorAll('.quiz-slide'));
+    const TOTAL_SLIDES = 5;
+    const progressFill  = document.getElementById('quiz-progress-fill');
+    const progressLabel = document.getElementById('quiz-progress-label');
+
+    const answers = {
+      position: '',
+      mitarbeiter_range: '',
+      email: '',
+      vorname: '',
+      nachname: '',
+      unternehmen: '',
+      phone: ''
+    };
+
+    const trackedSlides = new Set();
+
+    function showSlide(slideNum) {
+      mountContactFields();
+      slides.forEach(s => s.classList.remove('is-active'));
+      const target = slides.find(s => s.dataset.slide === String(slideNum));
+      if (target) target.classList.add('is-active');
+
+      const pct = Math.round((slideNum / TOTAL_SLIDES) * 100);
+      progressFill.style.width = pct + '%';
+      progressLabel.textContent = 'Schritt ' + slideNum + ' von ' + TOTAL_SLIDES;
+
+      document.getElementById('formular').scrollIntoView({ behavior: 'smooth', block: 'start' });
+
+      const trackKey = 'slide_' + slideNum;
+      if (!trackedSlides.has(trackKey)) {
+        trackedSlides.add(trackKey);
+        trackFunnelEvent('slide_view', String(slideNum));
+        trackPixelEvent('Quiz_Step_' + slideNum + '_Viewed', { landingpage: LANDINGPAGE_ID });
+      }
+    }
+
+    // Initial: Step 1 ist schon active per HTML, aber tracken
+    trackedSlides.add('slide_1');
+    trackFunnelEvent('slide_view', '1');
+    trackPixelEvent('Quiz_Step_1_Viewed', { landingpage: LANDINGPAGE_ID });
+
+    // =====================================================
+    // STEP 1+2 — Tap-Buttons (auto-advance)
+    // =====================================================
+    document.querySelectorAll('.quiz-option').forEach(btn => {
+      btn.addEventListener('click', () => {
+        const field = btn.dataset.field;
+        const value = btn.dataset.value;
+        if (!field || !value) return;
+
+        btn.parentElement.querySelectorAll('.quiz-option').forEach(b => b.classList.remove('is-selected'));
+        btn.classList.add('is-selected');
+        answers[field] = value;
+
+        trackPixelEvent('Quiz_Step_Answered', {
+          landingpage: LANDINGPAGE_ID,
+          field: field,
+          value: value
+        });
+
+        setTimeout(() => {
+          const currentSlide = parseInt(btn.closest('.quiz-slide').dataset.slide, 10);
+          if (currentSlide >= 1 && currentSlide <= 2) {
+            const next = currentSlide + 1;
+            showSlide(next);
+            if (next === 3) personalizeStep3();
+          }
+        }, 220);
+      });
+    });
+
+    // =====================================================
+    // BACK-Buttons
+    // =====================================================
+    document.querySelectorAll('.quiz-back').forEach(btn => {
+      btn.addEventListener('click', () => {
+        const target = parseInt(btn.dataset.back, 10);
+        if (!target) return;
+        showSlide(target);
+      });
+    });
+
+    // =====================================================
+    // STEP 3 — E-Mail mit Personalisierung
+    // =====================================================
+    function personalizeStep3() {
+      const headline = document.getElementById('quiz-step3-headline');
+      const positionMap = {
+        'tiefbauer':  'Maurer / Straßenbauer',
+        'polier':     'Polier',
+        'bauleiter':  'Bauleiter Hochbau',
+        'kanalbauer': 'Kanal- &amp; Rohrleitungsbauer',
+        'mehrere':    'Mehrere Positionen'
+      };
+      const sizeMap = {
+        '0-14':    'bis 14 MA',
+        '15-40':   '15&ndash;40 MA',
+        '41-100':  '41&ndash;100 MA',
+        '101-250': '101&ndash;250 MA',
+        '250+':    '250+ MA'
+      };
+      const pos  = positionMap[answers.position] || '';
+      const size = sizeMap[answers.mitarbeiter_range] || '';
+      if (pos && size) {
+        headline.innerHTML = 'Sehr gut. Ihr Report f&uuml;r <span class="quiz-perso">' + pos + '</span> bei <span class="quiz-perso">' + size + '</span> ist gleich da.';
+      }
+    }
+
+    // Kontaktfelder erst bei Quiz-Interaktion ins DOM — der Meta-In-App-
+    // Browser (Instagram/Facebook) erkennt sonst schon beim Laden das
+    // Kontaktformular und scrollt automatisch zum Quiz (Autofill-Angebot).
+    let fieldsMounted = false;
+    let emailInput, fullnameInput, firmaSubstep, firmaInput, phoneInput, privacyCheckbox;
+
+    function mountContactFields() {
+      if (fieldsMounted) return;
+      fieldsMounted = true;
+      document.querySelectorAll('[data-tpl]').forEach(slot => {
+        const tpl = document.getElementById(slot.dataset.tpl);
+        if (tpl) slot.appendChild(tpl.content.cloneNode(true));
+      });
+      emailInput      = document.getElementById('email');
+      const s4        = slides.find(s => s.dataset.slide === '4');
+      fullnameInput   = s4.querySelector('#fullname');
+      firmaSubstep    = s4.querySelector('[data-substep="firma"]');
+      firmaInput      = s4.querySelector('#unternehmen');
+      const s5        = slides.find(s => s.dataset.slide === '5');
+      phoneInput      = s5.querySelector('#phone');
+      privacyCheckbox = s5.querySelector('#privacy');
+
+      emailInput.addEventListener('keydown', (e) => {
+        if (e.key === 'Enter') { e.preventDefault(); step3CTA.click(); }
+      });
+      fullnameInput.addEventListener('blur', revealFirma);
+      fullnameInput.addEventListener('keydown', (e) => { if (e.key === 'Enter') { e.preventDefault(); revealFirma(); } });
+      fullnameInput.addEventListener('input', evaluateStep4Enabled);
+      firmaInput.addEventListener('input', evaluateStep4Enabled);
+      phoneInput.addEventListener('input', evaluateStep5Enabled);
+      privacyCheckbox.addEventListener('change', evaluateStep5Enabled);
+      [emailInput, fullnameInput, firmaInput, phoneInput].forEach(el => {
+        el.addEventListener('input', () => el.classList.remove('is-error'));
+      });
+    }
+
+    const step3Error  = document.getElementById('quiz-step3-error');
+    const step3CTA    = document.querySelector('[data-next-from="3"]');
+
+    step3CTA.addEventListener('click', () => {
+      const email = emailInput.value.trim();
+      const valid = /^[^\s@]+@[^\s@]+\.[^\s@]+$/.test(email);
+      if (!valid) {
+        emailInput.classList.add('is-error');
+        step3Error.classList.add('active');
+        return;
+      }
+      emailInput.classList.remove('is-error');
+      step3Error.classList.remove('active');
+      answers.email = email;
+
+      // Stufe 1: "Lead" — E-Mail liegt vor. Pixel + CAPI mit gemeinsamer
+      // event_id (Dedup). Lead landet sofort in Supabase (lead_stage=
+      // email_only); schließt die Person nicht ab, meldet der Dashboard-
+      // Cron sie nach 30 Min in Slack → Lenny ruft an.
+      if (!window.__gcLeadFired) {
+        window.__gcLeadFired = true;
+        const leadEventId = getEventId('lead');
+        try {
+          if (typeof fbq === 'function') {
+            fbq('track', 'Lead',
+              { content_name: 'Recruiting-Report E-Mail erhalten', landingpage: LANDINGPAGE_ID },
+              { eventID: leadEventId });
+          }
+        } catch(e) {}
+        sendLeadStageEvent('lead', leadEventId);
+      }
+
+      showSlide(4);
+    });
+
+    // =====================================================
+    // STEP 4 — Name → progressive Firma → Continue zu Step 5
+    // =====================================================
+    const step4CTA        = document.getElementById('quiz-step4-cta');
+    const step4Error      = document.getElementById('quiz-step4-error');
+
+    function evaluateStep4Enabled() {
+      const hasName  = fullnameInput.value.trim().split(/\s+/).filter(Boolean).length >= 2;
+      const hasFirma = /[A-Za-zÄÖÜäöüß]/.test(firmaInput.value) && firmaInput.value.trim().split(/[\s\-]+/).filter(w => w.length >= 2).length >= 2;
+      step4CTA.disabled = !(hasName && hasFirma);
+    }
+
+    function revealFirma() {
+      const parts = fullnameInput.value.trim().split(/\s+/).filter(Boolean);
+      if (parts.length >= 2 && firmaSubstep.style.display === 'none') {
+        firmaSubstep.style.display = '';
+        setTimeout(() => firmaInput.focus(), 100);
+      }
+    }
+
+    step4CTA.addEventListener('click', () => {
+      const nameParts = fullnameInput.value.trim().split(/\s+/).filter(Boolean);
+      if (nameParts.length < 2) { fullnameInput.classList.add('is-error'); step4Error.classList.add('active'); return; }
+      if (!(/[A-Za-zÄÖÜäöüß]/.test(firmaInput.value) && firmaInput.value.trim().split(/[\s\-]+/).filter(w => w.length >= 2).length >= 2)) { firmaInput.classList.add('is-error'); step4Error.classList.add('active'); return; }
+      step4Error.classList.remove('active');
+      answers.vorname     = nameParts[0];
+      answers.nachname    = nameParts.slice(1).join(' ');
+      answers.unternehmen = firmaInput.value.trim();
+      showSlide(5);
+    });
+
+    // =====================================================
+    // STEP 5 — Telefon + DSGVO + Final-Submit
+    // =====================================================
+    const finalSubmit     = document.getElementById('quiz-final-submit');
+    const step5Error      = document.getElementById('quiz-step5-error');
+
+    function evaluateStep5Enabled() {
+      const hasPhone = phoneInput.value.trim().length >= 6;
+      finalSubmit.disabled = !(hasPhone && privacyCheckbox.checked);
+    }
+
+    finalSubmit.addEventListener('click', async () => {
+      step5Error.classList.remove('active');
+
+      if (phoneInput.value.trim().length < 6) { phoneInput.classList.add('is-error'); step5Error.classList.add('active'); return; }
+      if (!privacyCheckbox.checked) { step5Error.classList.add('active'); return; }
+
+      let digits = phoneInput.value.replace(/\D/g, '');
+      if (digits.startsWith('00')) digits = digits.slice(2);
+      else if (digits.startsWith('0')) digits = '49' + digits.slice(1);
+      else if (!digits.startsWith('49')) digits = '49' + digits;
+      let phone = '+' + digits;
+      answers.phone = phone;
+
+      const originalText = finalSubmit.textContent;
+      finalSubmit.textContent = 'Wird gesendet…';
+      finalSubmit.disabled = true;
+
+      const payload = {
+        // Standard-Felder
+        vorname: answers.vorname,
+        nachname: answers.nachname,
+        unternehmen: answers.unternehmen,
+        email: answers.email,
+        phone: answers.phone,
+        // Quiz-Antworten
+        position: answers.position,
+        mitarbeiter_range: answers.mitarbeiter_range,
+        // Metadata
+        source: LANDINGPAGE_ID,
+        landingpage_id: LANDINGPAGE_ID,
+        session_id: sessionId,
+        ...trackingParams,
+        timestamp: new Date().toISOString(),
+        page_url: window.location.href,
+        referrer: document.referrer || '',
+        user_agent: navigator.userAgent
+      };
+
+      try {
+        // Crawler-Guard: Meta klickt nach jeder neuen Ad die LP durch und
+        // betaetigt dabei alle Buttons. Ohne echte Nutzer-Geste + Verweildauer
+        // wird KEIN Lead erzeugt (Regel: Send-Pfade an validierten State koppeln).
+        if (!window.gcRealUser || !window.gcRealUser()) {
+          console.warn('[GC Guard] Submit ohne echte Nutzer-Interaktion verworfen.', window.gcGuardInfo ? window.gcGuardInfo() : {});
+          return;
+        }
+        if (!IS_LIVE) {
+          console.info('[GC Preview] Make-Webhook (nicht gesendet):', payload);
+          await new Promise(r => setTimeout(r, 700));
+        } else if (MAKE_WEBHOOK_URL && MAKE_WEBHOOK_URL !== 'HIER_MAKE_WEBHOOK_URL_EINTRAGEN') {
+          const response = await fetch(MAKE_WEBHOOK_URL, {
+            method: 'POST',
+            headers: { 'Content-Type': 'application/json' },
+            body: JSON.stringify(payload)
+          });
+          if (!response.ok) throw new Error('Webhook returned ' + response.status);
+        } else {
+          console.warn('Make-Webhook noch nicht konfiguriert. Payload:', payload);
+          await new Promise(r => setTimeout(r, 800));
+        }
+
+        trackFunnelEvent('submit_success', null);
+
+        // Stufe 2: "CompleteRegistration" — Formular vollständig
+        // (E-Mail + Name + Firma + Telefon). Pixel + CAPI mit gemeinsamer
+        // event_id; Dashboard stuft die Lead-Zeile auf 'complete' hoch.
+        const crEventId = getEventId('complete_registration');
+        try {
+          if (typeof fbq === 'function') {
+            fbq('track', 'CompleteRegistration',
+              { content_name: 'Recruiting-Report angefordert', landingpage: LANDINGPAGE_ID },
+              { eventID: crEventId });
+          }
+        } catch(e) {}
+        sendLeadStageEvent('complete_registration', crEventId);
+
+        // Lead-Daten für Prefill des Termin-Formulars auf der
+        // Download-/Danke-Seite hinterlegen (gleiche Domain)
+        try {
+          localStorage.setItem('gc_lead_data_tiefbau', JSON.stringify({
+            vorname: answers.vorname,
+            nachname: answers.nachname,
+            unternehmen: answers.unternehmen,
+            email: answers.email,
+            phone: answers.phone
+          }));
+        } catch(e) {}
+
+        document.getElementById('lead-form').style.display = 'none';
+        document.getElementById('quiz-progress').style.display = 'none';
+        document.getElementById('quiz-header').style.display = 'none';
+        document.getElementById('form-success').classList.add('active');
+      } catch (err) {
+        console.error('Form submit error:', err);
+        trackFunnelEvent('submit_failed', null);
+        step5Error.textContent = 'Etwas ist schiefgelaufen. Bitte versuchen Sie es erneut.';
+        step5Error.classList.add('active');
+        finalSubmit.textContent = originalText;
+        finalSubmit.disabled = false;
+      }
+    });
+
+
+    // =====================================================
+    // STICKY MOBILE-CTA (Recovery)
+    // =====================================================
+    const stickyCta = document.getElementById('sticky-cta');
+    const formularEl = document.getElementById('formular');
+    if (stickyCta && formularEl) {
+      function refreshStickyCta() {
+        const r = formularEl.getBoundingClientRect();
+        stickyCta.classList.toggle('is-visible', r.bottom < 0);
+      }
+      const formObserver = new IntersectionObserver(refreshStickyCta, { threshold: [0, 0.01] });
+      formObserver.observe(formularEl);
+      let stickyTicking = false;
+      window.addEventListener('scroll', () => {
+        if (!stickyTicking) {
+          requestAnimationFrame(() => {
+            refreshStickyCta();
+            stickyTicking = false;
+          });
+          stickyTicking = true;
+        }
+      }, { passive: true });
+      refreshStickyCta();
+
+      stickyCta.addEventListener('click', () => {
+        try {
+          if (typeof fbq === 'function') {
+            fbq('trackCustom', 'Sticky_CTA_Clicked', { landingpage: LANDINGPAGE_ID });
+          }
+        } catch(e) {}
+      });
+    }
+  </script>
+</body>
+</html>
