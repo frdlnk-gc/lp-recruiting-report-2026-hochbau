@@ -1045,12 +1045,12 @@
     // === TERMIN-FORMULAR ===
     // *** Make-Webhook-URL hier eintragen (kann derselbe wie LP-Webhook sein, dann mit "source" filtern) ***
     const TERMIN_WEBHOOK_URL = 'https://hook.eu1.make.com/mmp7ruc5tn7mnm9sd4fmtmesmfdmiqf5';
-    const TIEFBAU_LP_ID = 'recruiting-report-2026-hochbau';
+    const HOCHBAU_LP_ID = 'recruiting-report-2026-hochbau';
 
     // Tracking-Params: localStorage (von LP-Visit) + URL-Override (falls vorhanden)
     let terminTrackingParams = { utm_source:'', utm_medium:'', utm_campaign:'', utm_content:'', utm_term:'', fbclid:'', gclid:'' };
     try {
-      const stored = localStorage.getItem('gc_tracking_' + TIEFBAU_LP_ID);
+      const stored = localStorage.getItem('gc_tracking_' + HOCHBAU_LP_ID);
       if (stored) terminTrackingParams = { ...terminTrackingParams, ...JSON.parse(stored) };
     } catch(e) {}
     const terminUrlParams = new URLSearchParams(window.location.search);
@@ -1059,7 +1059,7 @@
       if (v) terminTrackingParams[k] = v;
     });
     let terminSessionId = '';
-    try { terminSessionId = localStorage.getItem('gc_quiz_session_' + TIEFBAU_LP_ID) || ''; } catch(e) {}
+    try { terminSessionId = localStorage.getItem('gc_quiz_session_' + HOCHBAU_LP_ID) || ''; } catch(e) {}
 
     // =====================================================
     // META "Schedule"-EVENT (Pixel + CAPI mit Dedup)
@@ -1083,7 +1083,7 @@
       } catch(e) { return ''; }
     }
     function getScheduleEventId() {
-      const key = 'gc_eid_appointment_' + TIEFBAU_LP_ID;
+      const key = 'gc_eid_appointment_' + HOCHBAU_LP_ID;
       try {
         let id = localStorage.getItem(key);
         if (!id) { id = uuidv4(); localStorage.setItem(key, id); }
@@ -1098,7 +1098,7 @@
       try {
         if (typeof fbq === 'function') {
           fbq('track', 'Schedule',
-            { content_name: 'Beratungsgespräch angefragt', landingpage: TIEFBAU_LP_ID },
+            { content_name: 'Beratungsgespräch angefragt', landingpage: HOCHBAU_LP_ID },
             { eventID: eventId });
         }
       } catch(e) {}
@@ -1109,7 +1109,7 @@
       const body = {
         stage: 'appointment',
         event_id: eventId,
-        landingpage_id: TIEFBAU_LP_ID,
+        landingpage_id: HOCHBAU_LP_ID,
         source_page: 'download-page-termin-anfrage-tiefbau',
         session_id: terminSessionId || null,
         email: payload.email,
