@@ -80,10 +80,10 @@
   <script src="https://challenges.cloudflare.com/turnstile/v0/api.js" async defer></script>
   <style>
     :root {
-      /* === TIEFBAU FARBSYSTEM === */
+      /* === HOCHBAU FARBSYSTEM === */
       /* "Moss"/"Green"-Variablen werden weiter genutzt, sind aber jetzt Anthrazit+Orange */
       --moss: #2D3338;             /* Stahl-Anthrazit (war Forest Green) */
-      --moss-dark: #1A1D21;        /* Asphalt-Schwarz (war Moss-Dark) */
+      --moss-dark: #1A1D21;        /* Anthrazit (war Moss-Dark) */
       --moss-deep: #0E1012;        /* Tiefes Anthrazit (war Moss-Deep) */
       --poison-green: #FF6B1A;     /* Baustellen-Orange (war Poison-Green) */
       --poison-glow: #FF8533;      /* Helles Orange (war Poison-Glow) */
@@ -1953,11 +1953,12 @@
     function personalizeStep3() {
       const headline = document.getElementById('quiz-step3-headline');
       const positionMap = {
-        'tiefbauer':  'Maurer / Straßenbauer',
-        'polier':     'Polier',
-        'bauleiter':  'Bauleiter Hochbau',
-        'kanalbauer': 'Kanal- &amp; Rohrleitungsbauer',
-        'mehrere':    'Mehrere Positionen'
+        'maurer':         'Maurer / Beton- &amp; Stahlbetonbauer',
+        'polier':         'Polier Hochbau',
+        'bauleiter':      'Bauleiter Hochbau',
+        'schalungsbauer': 'Schalungsbauer / Zimmerer',
+        'mehrere':        'Mehrere Positionen',
+        'anderes_gewerk': 'Ihr Gewerk'
       };
       const sizeMap = {
         '0-14':    'bis 14 MA',
